@@ -997,9 +997,10 @@ session_start();
 
   @media screen and (max-width: 600px) 
   {
-    ul.topnav li.right, ul.topnav li 
+    ul.topnav li.right, ul.topnav li, .dropbtn
     {
       float: none;
+      display: none;
     }
   }
 
@@ -1022,6 +1023,14 @@ session_start();
   @media screen and (max-width: 600px)
   {
     .logo
+    {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) 
+  {
+    #busca
     {
       display: none;
     }
