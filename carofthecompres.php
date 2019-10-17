@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Carrinho de Compra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Seleção -->
   <style type="text/css">
@@ -152,12 +152,12 @@ if( isset($_COOKIE) ) {
     
 }
 ?>
-<a href="homee.php"><button onclick="compra()" class="btnn">Efetuar Compra</button></a>
-<script>
+<a href="vendas.php"><button onclick="compra()" class="btnn">Efetuar Compra</button></a>
+<!-- <script>
         function compra() {
         alert("Seu Produto Será Entregue Diretamente No Seu E-mail Informado Em Seu Cadastro!!                                                                                  Obrigado Por Comprar Em Hydra Games!");
 }
-</script>
+</script> -->
 <table>
         <tr>
             <th>Imagem do Produto</th>
