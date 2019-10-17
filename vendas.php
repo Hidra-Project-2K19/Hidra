@@ -1,33 +1,113 @@
-<?php
-
-session_start();
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hydra Games</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Início - Logado </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Efetuando Compra</title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
-<!-- Seleção -->
-  <style type="text/css">
-    ::selection{background:rgba(157, 255, 159, 0.84);}
-    ::-webkit-selection{background:rgba(157, 255, 159, 0.84);}
-    ::-moz-selection{background:rgba(157, 255, 159, 0.84);}
-
-    ins,del{text-decoration:none;}
-    .t-caret{font-size:inherit;color:rgba(20, 21, 20, 0);}
-    @media(max-width:800px){#t{width:400px;margin-left:-200px;}}    
-  </style>
-<!-- Fim Seleção -->
-
 <style>
 
-  html
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.containerV {
+  background-color: #1c1c1c;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.inputV[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.labelV {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btnV {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btnV:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+html
   {
     background: center top no-repeat rgb(34, 34, 34);
     background-image: linear-gradient(rgba(0, 255, 75, 0.16) 5%, rgba(72, 94, 42, 0) 70%);
@@ -863,40 +943,6 @@ session_start();
     }
   }
 
-  .openbtn 
-  {
-    font-size: 10px;
-    cursor: pointer;
-    background-color: #3333332e;
-    color: white;
-    border: none;
-    border-radius: -15px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 8px;
-    margin-left: 8px;
-    width: 35px;
-    padding: 3px 0px;
-  }
-
-  @media screen and (max-width: 600px) 
-  {
-    .openbtn 
-    {
-      position: relative;
-      float: left;
-      left: 48%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
-  .openbtn:hover {
-    background-color: #44444487;
-    color: #99ffa9;
-    transition: 0.5s;
-  }
-
 /* Menu Rodrigo */
   ul.topnav 
   {
@@ -1392,7 +1438,6 @@ session_start();
   /* Fim card */
 
 
-
   .cont 
   {
     clear:both;
@@ -1425,6 +1470,7 @@ session_start();
     border-bottom: inset 1px;
     border-bottom-color: #5efb60;
     clear:both;
+    margin-top: 240px;
   }
 
   footer p
@@ -1498,28 +1544,13 @@ session_start();
   height: 50px;
 }
 
-input {
-  height: 45px;
-  border: none;
-  outline: none;
-  padding-left: 50px;
-  width: 0;
-  position: absolute;
-  top: 4px;
-  left: 50px !important;
-  background:#6d6d6d;
-  z-index: 3;
-  transition: width 1s ease-out;
-  border-radius: 4px;
-  cursor: pointer;
-}
 input:focus { 
   border: 1px solid #3ffb60;
   border-radius: 4px;
   width: 30%;
   z-index: 1;
   transition: width 1s ease-in;
-  background: #6d6d6d;
+  
 }
 .buscars { 
   height: 50px;
@@ -1551,7 +1582,7 @@ input:focus {
 
 label {display: block;}
   input, button {padding: 10px;}
-  input {width: 30%;}
+  input {width: 100%; color: #1c1c1c;}
 
 
   li a, .dropbtn {
@@ -1598,9 +1629,10 @@ li.dropdown {
   top: 55px;
 }
 </style>
-
 </head>
+
 <body>
+
 <!-- MenuBTN -->
 <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -1658,318 +1690,96 @@ li.dropdown {
         </div>
     </ul>
 
-    <form action=" " method="post">
-      <input type="search" id="busca" placeholder="Procurar Jogo">
-      </form>
   
 <!-- FIM/Menu -->
 
+<h2 style="margin: 20px;">Informe seus dados para efetuar a compra</h2>
+<div class="row">
 
-<!-- Slide -->
-<div class="slide">
-  <div class="w3-content w3-display-container" style="max-width:100%; max-height: 100%;">
-    <img class="mySlides" src="img/fortnite.jpg" style="width: 100%; height: 90%; display: none; box-sizing: border-box;">
-    <img class="mySlides" src="img/csgo.jpg" style="width: 100%; height: 90%; display: none; box-sizing: border-box;">
-    <img class="mySlides" src="img/rocketleague.jpg" style="width: 100%; height: 90%; display: none; box-sizing: border-box;">
-    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  <div class="col-75">
+    <div class="containerV">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Informações Pessoais</h3>
+            <label class="labelV" for="fname"><i class="fa fa-user"></i> Nome Completo</label>
+            <input class="inputV" type="text" id="fname" name="firstname" placeholder="Insira seu nome">
+            <label class="labelV" for="email"><i class="fa fa-envelope"></i> E-mail</label>
+            <input class="inputV" type="text" id="email" name="email" placeholder="ifsp@example.com">
+            <label class="labelV" for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+            <input class="inputV" type="text" id="adr" name="address" placeholder="Rua 14, Número 93, Martim">
+            <label class="labelV" for="city"><i class="fa fa-institution"></i> Cidade</label>
+            <input class="inputV" type="text" id="city" name="city" placeholder="Caraguatatuba">
+
+            <div class="row">
+              <div class="col-50">
+                <label class="labelV" for="state">Estado</label>
+                <input class="inputV" type="text" id="state" name="state" placeholder="SP">
+              </div>
+              <div class="col-50">
+                <label class="labelV" for="zip">CEP</label>
+                <input class="inputV" type="text" id="zip" name="zip" placeholder="12345-678">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label class="labelV" for="fname">Cartões Aceitáveis</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label class="labelV" for="cname">Nome no cartão</label>
+            <input class="inputV" type="text" id="cname" name="cardname" placeholder="Cleitu Rasta">
+            <label class="labelV" for="ccnum">Número do cartão de crédito</label>
+            <input class="inputV" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label class="labelV" for="expmonth">Mês de expiração do cartão</label>
+            <input class="inputV" type="text" id="expmonth" name="expmonth" placeholder="Dezembro">
+            <div class="row">
+              <div class="col-50">
+                <label class="labelV" for="expyear">Ano de Expiração</label>
+                <input class="inputV" type="text" id="expyear" name="expyear" placeholder="2028">
+              </div>
+              <div class="col-50">
+                <label class="labelV" for="cvv">Código de Segurança</label>
+                <input class="inputV" type="text" id="cvv" name="cvv" placeholder="012">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label class="labelV">
+          <input class="inputV" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input class="inputV" type="submit" value="Continue to checkout" class="btnv" style="background-color: rgb(85, 208, 87); border-radius: 5px;">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="containerV">
+    
+      <h4>Carrinho <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Produto 1</a> <span class="price">R$150</span></p>
+      <p><a href="#">Produto 2</a> <span class="price">R$36</span></p>
+      <p><a href="#">Produto 3</a> <span class="price">R$59</span></p>
+      <p><a href="#">Produto 4</a> <span class="price">R$199</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>R$444</b></span></p>
     </div>
   </div>
 </div>
-<!-- FIM/Slide -->
 
-<!-- PHP -->
-
-<!-- FIM PHP -->
-
-<h1 class="oferta">OFERTAS</h1>
-<!-- Cards -->
-<div class="AWP">
-  <div class="card" id="card1">
-    <a href="caracteristicasGOD.php"><img src="img/godimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasGOD.php"><h1>God Of War PS4</h1></a>
-    <p class="price">R$179.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="God Of War PS4">
-    <input type="hidden" name="preco" value="R$ 179,99">
-    <input type="hidden" name="imagem" value="img/godimg.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card2">
-    <a href="caracteristicasRL.php"><img src="img/rlimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasRL.php"><h1>Rocket League</h1></a>
-    <p class="price">R$34.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Rocket League">
-    <input type="hidden" name="preco" value="R$ 34,99">
-    <input type="hidden" name="imagem" value="img/rlimg.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card3">
-    <a href="caracteristicasCSGO.php"><img src="img/csgoimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasCSGO.php"><h1>CS:GO</h1></a>
-    <p class="price">GRÁTIS</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="caracteristicasCSGO.php" method="POST">
-    <p><button>BAIXAR</button></p>
-    </form>
-  </div>
-
-  <div class="card" id="card4">
-  <a href="caracteristicasFTN.php"><img src="img/fortniteimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasFTN.php"><h1>Fortnite</h1></a>
-    <p class="price">GRÁTIS</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="caracteristicasFTN.php" method="POST">
-    <p><button type="submit">BAIXAR</button></p> 
-    </form>
-  </div>
-
-
-
-  <div class="card" id="card5">
-  <a href="caracteristicasACBF.php"><img src="img/ACblack.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-  <a href="caracteristicasACBF.php"><h1>AC Black Flag</h1></a>
-    <p class="price">R$59.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Assassin's Creed Black Flag">
-    <input type="hidden" name="preco" value="R$ 59,99">
-    <input type="hidden" name="imagem" value="img/ACblack.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card6">
-    <a href="caracteristicasGTA.php"><img src="img/gtav.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasGTA.php"><h1>GTA V</h1></a>
-    <p class="price">R$99.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Grand Theft Auto V">
-    <input type="hidden" name="preco" value="R$ 99,99">
-    <input type="hidden" name="imagem" value="img/gtav.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card7">
-    <a href="caracteristicasSKY.php"><img src="img/skyrim.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasSKY.php"><h1>TES V Skyrim</h1></a>
-    <p class="price">R$39.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="The Elder Scrols V Skyrim">
-    <input type="hidden" name="preco" value="R$ 39,99">
-    <input type="hidden" name="imagem" value="img/skyrim.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card8">
-    <a href="caracteristicasH.php"><img src="img/halo4img.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasH.php"><h1>Halo 4</h1></a>
-    <p class="price">R$24.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Halo 4">
-    <input type="hidden" name="preco" value="R$ 24,99">
-    <input type="hidden" name="imagem" value="img/halo4img.jpg" /> 
-    </form>
-  </div>
-</div>
-<!-- FIM/Cards -->
-<br>
-<br>
-
-<!-- Introdução -->
-<div class="cont">
-  <p>A plataforma contém vários estilos e gêneros de jogos, além de ser fiel e manter todos os direitos autorais de todas as empresas fabricantes de seus jogos, introduzimos uma maneira eficaz de efetuar a compra dos jogos</p>
-</div>
-<!-- FIM/Introdução -->
-<div class="AWP">
-  <div class="card" id="card1">
-    <a href="caracteristicasNEED.php"><img src="img/needforspeedimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasNEED.php"><h1>Need For Speed HP</h1></a>
-    <p class="price">R$29.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Need For Speed Hot Pursuit">
-    <input type="hidden" name="preco" value="R$ 29,99">
-    <input type="hidden" name="imagem" value="img/needforspeedimg.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card2">
-  <a href="caracteristicasJUST.php"><img src="img/just4img.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-  <a href="caracteristicasJUST.php"><h1>Just Cause 4</h1></a>
-    <p class="price">R$69.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Just Cause 4">
-    <input type="hidden" name="preco" value="R$ 69,99">
-    <input type="hidden" name="imagem" value="img/just4img.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card3">
-    <a href="caracteristicasOUT.php"><img src="img/outimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasOUT.php"><h1>Outlast II</h1></a>
-    <p class="price">R$57,99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Outlast II">
-    <input type="hidden" name="preco" value="R$ 575,99">
-    <input type="hidden" name="imagem" value="img/outimg.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card4">
-    <a href="caracteristicasEURO.php"><img src="img/eurotruckimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasEURO.php"><h1>Euro Truck 2</h1></a>
-    <p class="price">R$34.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Euro Truck Simuator 2">
-    <input type="hidden" name="preco" value="R$ 34,99">
-    <input type="hidden" name="imagem" value="img/eurotruckimg.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card5">
-  <a href="caracteristicasMORTAL.php"><img src="img/mortal.png" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasMORTAL.php"><h1>Mortal Kombat 11</h1></a>
-    <p class="price">R$199,99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Mortal Kombat 11">
-    <input type="hidden" name="preco" value="R$ 199,99">
-    <input type="hidden" name="imagem" value="img/mortal1.png" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card6">
-    <a href="caracteristicasRUST.php"><img src="img/rustimg.png" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasRUST.php"><h1>Rust</h1></a>
-    <p class="price">R$65,99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Rust">
-    <input type="hidden" name="preco" value="R$ 65,99">
-    <input type="hidden" name="imagem" value="img/rustimg.png" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card7">
-    <a href="caracteristicasRAINBOW.php"><img src="img/rainbowimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasRAINBOW.php"><h1>Rainbow Six® Siege</h1></a>
-    <p class="price">R$59.99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Rainbow Six® Siege">
-    <input type="hidden" name="preco" value="R$ 59,99">
-    <input type="hidden" name="imagem" value="img/rainbowimg.jpg" /> 
-    </form>
-  </div>
-
-  <div class="card" id="card8">
-    <a href="caracteristicasFALL.php"><img src="img/fallimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
-    <a href="caracteristicasFALL.php"><h1>Fallout 4</h1></a>
-    <p class="price">R$69,99</p>
-    <p>Disponível na Plataforma Hydra</p>
-    <form action="criar.php" method="POST">
-    <p><button type="submit">+ CARRINHO</button></p>
-    <input type="hidden" name="nome" value="Fallout 4">
-    <input type="hidden" name="preco" value="R$ 69,99">
-    <input type="hidden" name="imagem" value="img/fallimg.jpg" /> 
-    </form>
-  </div>
-</div>
-
-<script>
-// botão Menu
-  function openNav() 
-  {
-    document.getElementById("myNav").style.height = "100%";
-  }
-
-  function closeNav() 
-  {
-    document.getElementById("myNav").style.height = "0%";
-  }
-// Fim Botão
-
-// Slide
-  var slideIndex = 1;
-    showDivs(slideIndex);
-
-  function plusDivs(n) 
-  {
-    showDivs(slideIndex += n);
-  }
-
-  function currentDiv(n) 
-  {
-    showDivs(slideIndex = n);
-  }
-
-  function showDivs(n) 
-  {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " w3-white";
-  }
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000); 
-  }
-  // Fim Slide
-</script>
-      
-  <footer>
-  <img src="img/HYDRA-WHITEE.png" class="logoF">
+<!-- Footer -->
+<footer>
+    <img src="img/HYDRA-WHITEE.png" class="logoF">
         <p>© 2019 Hydra Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos deus respectivos donos nos EUA e em outros países.
         IVA incluso em todos os preços onde aplicável.</p>
-  </footer>    
+  </footer>
+    <!-- FIM/footer -->
+
 </body>
 </html>
- 
-

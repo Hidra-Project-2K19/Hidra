@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Jogos Indie </title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
@@ -513,6 +514,41 @@
     {
       float: left;
       margin: 1% 8% 1% 18.7%;
+    }
+  }
+
+  @media screen and (max-width: 1680px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1.5% 1% 4.7%;
+    }
+  }
+
+  @media screen and (max-width: 1600px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 4.3% 1% 1.75%;
+    }
+  }
+
+  @media screen and (max-width: 1441px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1% 1% 2.7%;
+    }
+  }
+  @media screen and (max-width: 1366px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1% 1% 1.7%;
     }
   }
 

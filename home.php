@@ -3,6 +3,7 @@
 <head>
 <title>Hydra Games</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Início </title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -268,9 +269,10 @@
 
   @media screen and (max-width: 600px) 
   {
-    ul.topnav li.right, ul.topnav li 
+    ul.topnav li.right, ul.topnav li, .dropbtn
     {
       float: none;
+      display: none;
     }
   }
 
@@ -297,6 +299,15 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 600px) 
+  {
+    #busca
+    {
+      display: none;
+    }
+  }
+
 /* Fim Menu Rodrigo*/
 
 /* Slides */
@@ -479,7 +490,7 @@
   {
     vertical-align: middle;
     z-index: 1;
-    height: 1210px;
+    height: 1135px;
   }
 
 
@@ -525,6 +536,41 @@
     }
   }
 
+  @media screen and (max-width: 1680px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1.5% 1% 4.7%;
+    }
+  }
+
+  @media screen and (max-width: 1600px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 4.3% 1% 1.75%;
+    }
+  }
+
+  @media screen and (max-width: 1441px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1% 1% 2.7%;
+    }
+  }
+  @media screen and (max-width: 1366px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1% 1% 1.7%;
+    }
+  }
+
   @media screen and (max-width: 1304px) 
   {
     .card
@@ -551,6 +597,7 @@
       margin: 1% 10% 1% 35% !important;
     }
   }
+  a
 
   @media screen and (max-width: 680px)
   {
