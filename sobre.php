@@ -809,7 +809,7 @@
 </div>
 
 <div class="pessoa">
-<h1 class="tipessoa">Helopyza Leão<h1>
+<h1 class="tipessoa">Heloyza Leão<h1>
 <p>Heloyza Leão de Oliveira,nasceu em Caraguatatuba no dia 20 de outubro do ano 2000,terminou o ensino médio em 2017,está cuyrsando o segundo módulo do curso técnico de informática para internet.<p>
 </div>
 

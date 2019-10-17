@@ -390,7 +390,7 @@
 
         <div class="tc">
         <br>
-            <h2>Insira Seus Dados</h2>
+            <h2>Insira os dados do Produto</h2>
 
         <!-- Formulário -->
         <?php
@@ -405,24 +405,20 @@
             <form  action="cad2.php" method="POST" style="border: none; box-shadow: none;">
                 
             <h1 style="box-shadow: none;">Informações Principais</h1>
-            <label for="nome" style="box-shadow: none !important;"><b>ID</b></label><br>
-            <input type="text" name="nome" placeholder="Enter ID" id="nome" style=" box-shadow: none !important;">
+            <label for="nomep" style="box-shadow: none !important;"><b>Nome do produto</b></label><br>
+            <input type="text" name="nomep" placeholder="Nome" id="nomep" style=" box-shadow: none !important;">
                 <br>
                 <br>
-            <label for="email" style=" box-shadow: none !important;"><b>E-mail</b></label><br>
-            <input name="email" type="email" placeholder="Enter E-mail" id="email" style=" box-shadow: none !important;" >
+            <label for="descricaop" style=" box-shadow: none !important;"><b>Descrição do produto</b></label><br>
+            <input name="descricaop" type="text" placeholder="Descrição" id="descricaop" style=" box-shadow: none !important;" >
                 <br>
                 <br>
-            <label for="usuario" style=" box-shadow: none !important;"><b>Nick-Name</b></label><br>
-            <input name="usuario" type="text" placeholder="Enter Nick-Name" id="usuario" style=" box-shadow: none !important;" >
-                <br>
-                <br>
-            <label for="senha" style=" box-shadow: none !important;"><b>Senha</b></label><br>
-            <input type="password" name="senha" placeholder="Enter Password" id="senha" style=" box-shadow: none !important;" required>
+            <label for="precop" style=" box-shadow: none !important;"><b>Preço</b></label><br>
+            <input name="precop" type="text" placeholder="Preço" id="precop" style=" box-shadow: none !important;" >
                 <br>
                 <br>
 		
-
+              
         </div>
         </fieldset>
     <!-- FIM/formulário -->
