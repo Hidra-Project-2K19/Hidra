@@ -417,9 +417,14 @@
             <input name="precop" type="text" placeholder="Preço" id="precop" style=" box-shadow: none !important;" >
                 <br>
                 <br>
-		
+        
+               
+            </form>
+            
               
         </div>
+        <form method="post" enctype="multipart/form-data" action="upload.php">
+        <input type="file" name="filename[]" multiple>
         </fieldset>
     <!-- FIM/formulário -->
 
