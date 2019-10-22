@@ -400,9 +400,9 @@
 			}
 		?>
 
-            <fieldset>
-            <div class="caixa1">
-            <form  action="cad2.php" method="POST" style="border: none; box-shadow: none;">
+        <fieldset>
+        <div class="caixa1">
+            <form  action="adicionarcreate.php" method="POST" style="border: none; box-shadow: none;">
                 
             <h1 style="box-shadow: none;">Informações Principais</h1>
             <label for="nomep" style="box-shadow: none !important;"><b>Nome do produto</b></label><br>
@@ -417,14 +417,17 @@
             <input name="precop" type="text" placeholder="Preço" id="precop" style=" box-shadow: none !important;" >
                 <br>
                 <br>
-        
-               
+
+            <label for="caminho_img" style=" box-shadow: none !important;"><b>Preço</b></label><br>
+            <input name="caminho_img" type="text" placeholder="Imagem" id="caminho_img" style=" box-shadow: none !important;" >
+            <button type="submit" name="btn-cadastrar" class="btn"> Cadastrar </button>
+					<a href="../index.php" class="btn green"> Página inicial </a>
             </form>
-            
+
+
+            </form>
               
         </div>
-        <form method="post" enctype="multipart/form-data" action="upload.php">
-        <input type="file" name="filename[]" multiple>
         </fieldset>
     <!-- FIM/formulário -->
 

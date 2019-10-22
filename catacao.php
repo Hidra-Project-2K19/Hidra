@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -902,6 +905,47 @@ li.dropdown {
 
 <!-- Cards -->
 <div class="AWP">
+<?php include_once("conexao.php");
+            $result_cursos = "SELECT * FROM catacao";
+            $resultado_cursos = mysqli_query($conn, $result_cursos);
+          ?>
+
+          <?php while($rows_cursos = mysqli_fetch_assoc($resultado_cursos)){ ?>
+          <div class="col s6 m4 l3">
+            <div class="card">
+              <div class="card-image">
+                <a href="PaginaVendaAcao.php?id_curso=<?php echo $rows_cursos['id']; ?>">
+                <img src="img/<?php echo $rows_cursos['caminho_img']; ?>" alt="...">
+                </a>
+              </div>
+              <div class="card-content">
+                <p><?php echo $rows_cursos['precop']; ?></p>
+              </div>
+              <div class="card-action">
+                <a href="#">Adicionar ao carrinho</a>
+              </div>
+              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class="btn-floating orange "><i class="material-icons">edit</i></a>
+                <td><a href="#modal<?php echo $rows_cursos['id']; ?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</i></a></td>
+              <div id="modal<?php echo $rows_cursos['id']; ?>" class="modal">
+              <div class="modal-content">
+                <h4>Opa!</h4>
+                <p>Tem certeza que deseja excluir esse cliente?</p>
+              </div>
+              <div class="modal-footer">               
+
+                <form action="deleteproduto.php" method="POST">
+                  <input type="hidden" name="id" value="<?php echo $rows_cursos['id']; ?>">
+                  <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar</button>
+
+                   <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+
+                </form>
+
+              </div>
+            </div>
+            </div>
+          </div>
+          <?php } ?>
   <div class="card" id="card1">
     <a href="caracteristicasGOD.php"><img src="img/godimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
     <a href="caracteristicasGOD.php"><h1>God Of War PS4</h1></a>
