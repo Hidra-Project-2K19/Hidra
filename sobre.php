@@ -795,7 +795,7 @@
 
 <div class="pessoa">
 <h1 class="tipessoa">Ana Beatriz<h1>
-<p>Ana Beatriz Felix Lima da Silva nasceu em Caraguatatuba no dia 19 de dezembro de 2000 (18) anos, terminou o ensino médio na escola E.E Comendador Mario Trombini, está cursando o ensino superior em educação física Bacharelado, e está cursando o segundo módulo do curso de informática.<p>
+<p>Ana Beatriz Felix ima da Silva nasceu em caraguatatuba no dia 19 de dezembro de 2000 (18) anos, terminou o ensino médio na escola E.E Comendador Mario Trombini, está cursando o ensino superior em educação física Bacharelado, e está cursando o segundo módulo do curso de informática.<p>
 </div>
 
 <div class="pessoa">
@@ -809,7 +809,7 @@
 </div>
 
 <div class="pessoa">
-<h1 class="tipessoa">Heloyza Leão<h1>
+<h1 class="tipessoa">Helopyza Leão<h1>
 <p>Heloyza Leão de Oliveira,nasceu em Caraguatatuba no dia 20 de outubro do ano 2000,terminou o ensino médio em 2017,está cuyrsando o segundo módulo do curso técnico de informática para internet.<p>
 </div>
 
