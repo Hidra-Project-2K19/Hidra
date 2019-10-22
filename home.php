@@ -910,7 +910,7 @@ li.dropdown {
           <a href="catgratis.php">Gratuito</a>
         </div>
       </li>
-      
+      <li class="left"><a href="adicionarp.php">adicionar</a></li>
     </ul>
 
     <form action=" " method="post">
