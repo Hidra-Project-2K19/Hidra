@@ -886,7 +886,7 @@ li.dropdown {
       <br>
         <a href="login.php">Conta</a>
         <a href="sobre.php">Sobre</a>
-        <a href="support.php">suporte</a>
+        <a href="support.php">Suporte</a>
         <a href="login.php">Carrinho</a>
       </div>
     </div>

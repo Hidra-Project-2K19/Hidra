@@ -767,7 +767,7 @@
       <br>
         <a href="account.php">Conta</a>
         <a href="contato.php">Contato</a>
-        <a href="support.php">suporte</a>
+        <a href="support.php">Suporte</a>
         <a href="carofthecompres.php">Carrinho</a>
       </div>
     </div>
@@ -790,28 +790,23 @@
 
 <div class="pessoa">
 <h1 class="tipessoa">Igor Luis <h1>
-<p>Igor Luis de Oliveira Leite nasceu  em Jacareí no dia 1 de maio de 2002 (17) anos,cursando o 3º ano do ensino médio na escola Tableau, está cursando segundo móduo de informática no IF. <p>
+<p>Igor Luis de Oliveira Leite nasceu em Jacareí no dia 1 de maio de 2002 (17) anos, cursando o 3º ano do ensino médio na escola Tableau, está cursando segundo móduo de informática no IF. <p>
 </div>
 
 <div class="pessoa">
 <h1 class="tipessoa">Ana Beatriz<h1>
-<p>Ana Beatriz Felix ima da Silva nasceu em caraguatatuba no dia 19 de dezembro de 2000 (18) anos, terminou o ensino médio na escola E.E Comendador Mario Trombini, está cursando o ensino superior em educação física Bacharelado, e está cursando o segundo módulo do curso de informática.<p>
-</div>
-
-<div class="pessoa">
-<h1 class="tipessoa">Kamilly Beatriz<h1>
-<p>Kamilly Beatriz Cassiano Cavalcante, nasceu em Caraguatatuba-SP no dia 06 de dezembro de 2002 (16 anos). Participou das oficinas culturas na Fundacc durante 7 anos fazendo vários cursos, atualmente está cursando o 3ª ano do ensino médio na escola E.E Comendador Mario Trombini, está fazendo curso no Instituto Federal de São Paulo- Campos Caraguatatuba, no 2 modulo de Informática para internet.<p>
+<p>Ana Beatriz Felix L. da S. nasceu em Caraguatatuba no dia 19 de dezembro de 2000 (18) anos, terminou o ensino médio na escola E.E Comendador Mario Trombini, está cursando o ensino superior em educação física Bacharelado, e está cursando o segundo módulo do curso de informática.<p>
 </div>
 
 <div class="pessoa">
 <h1 class="tipessoa">Gustavo Matheus<h1>
-<p>Gustavo Matheus Melquides Moreira,nasceu em São Paulo no dia 5 de abril de 1997(22anos),terminou o ensino médio na escola E.E Colônia dos Pescadores,formado em Design GRáfico,pela faculdade das Américas(FAM),e está cursando o 2º semestre do curso de informática para WEB.<p>
+<p>Gustavo Matheus Melquides Moreira, nasceu em São Paulo no dia 5 de abril de 1997(22anos), terminou o ensino médio na escola E.E Colônia dos Pescadores, formado em Design GRáfico,pela faculdade das Américas(FAM),e está cursando o 2º semestre do curso de informática para WEB.<p>
 </div>
 
 <div class="pessoa">
-<h1 class="tipessoa">Helopyza Leão<h1>
-<p>Heloyza Leão de Oliveira,nasceu em Caraguatatuba no dia 20 de outubro do ano 2000,terminou o ensino médio em 2017,está cuyrsando o segundo módulo do curso técnico de informática para internet.<p>
-</div>
+<h1 class="tipessoa">Heloyza Leão<h1>
+<p>Heloyza Leão de Oliveira, nasceu em Caraguatatuba no dia 20 de outubro do ano 2000, terminou o ensino médio em 2017, está cursando o segundo módulo do curso técnico de informática para internet.<p>
+</div> 
 
 <div class="pessoa">
 <h1 class="tipessoa">Frederico Zani Canduçço<h1>
