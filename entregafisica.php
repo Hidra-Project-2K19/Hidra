@@ -398,7 +398,7 @@
         align-content: center;
         justify-content: space-between;
         position: absolute;
-        margin: 0% 57% 0% 57%;
+        margin: 0% 49% 0% 47%;
     }
 
     .btnS p:hover .btnR
@@ -479,6 +479,11 @@
       display: none;
     }
   }
+
+  h3, h4, p
+  {
+      color: #e3e3e3;
+  }
 </style>
     
 </head>
@@ -498,27 +503,27 @@
 
   <div class="col-75">
     <div class="containerV">
-      <form action="/action_page.php">
+      <form action="homee.php">
       
         <div class="row">
           <div class="col-50">
             <h3>Informações Pessoais</h3>
-            <label class="labelV" for="fname"><i class="fa fa-user"></i> Nome Completo</label>
+            <label class="labelV" for="fname" style="color: #e3e3e3;"><i class="fa fa-user"></i> Nome Completo</label>
             <input class="inputV" type="text" id="fname" name="firstname" placeholder="Insira seu nome">
-            <label class="labelV" for="email"><i class="fa fa-envelope"></i> E-mail</label>
+            <label class="labelV" for="email" style="color: #e3e3e3;"><i class="fa fa-envelope"></i> E-mail</label>
             <input class="inputV" type="text" id="email" name="email" placeholder="ifsp@exemplo.com">
-            <label class="labelV" for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+            <label class="labelV" for="adr" style="color: #e3e3e3;"><i class="fa fa-address-card-o"></i> Endereço</label>
             <input class="inputV" type="text" id="adr" name="address" placeholder="Rua 14, Número 93, Martim">
-            <label class="labelV" for="city"><i class="fa fa-institution"></i> Cidade</label>
+            <label class="labelV" for="city" style="color: #e3e3e3;"><i class="fa fa-institution"></i> Cidade</label>
             <input class="inputV" type="text" id="city" name="city" placeholder="Caraguatatuba">
 
             <div class="row">
               <div class="col-50">
-                <label class="labelV" for="state">Estado</label>
+                <label class="labelV" for="state" style="color: #e3e3e3;">Estado</label>
                 <input class="inputV" type="text" id="state" name="state" placeholder="SP">
               </div>
               <div class="col-50">
-                <label class="labelV" for="zip">CEP</label>
+                <label class="labelV" for="zip" style="color: #e3e3e3;">CEP</label>
                 <input class="inputV" type="text" id="zip" name="zip" placeholder="12345-678">
               </div>
             </div>
@@ -526,37 +531,34 @@
 
           <div class="col-50">
             <h3>Pagamento</h3>
-            <label class="labelV" for="fname">Cartões Aceitáveis</label>
+            <label class="labelV" for="fname" style="color: #e3e3e3;">Cartões Aceitáveis</label>
             <div class="icon-container">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
               <i class="fa fa-cc-amex" style="color:blue;"></i>
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label class="labelV" for="cname">Nome no cartão</label>
+            <label class="labelV" for="cname" style="color: #e3e3e3;">Nome no cartão</label>
             <input class="inputV" type="text" id="cname" name="cardname" placeholder="Cleitu Rasta">
-            <label class="labelV" for="ccnum">Número do cartão de crédito</label>
+            <label class="labelV" for="ccnum" style="color: #e3e3e3;">Número do cartão de crédito</label>
             <input class="inputV" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label class="labelV" for="expmonth">Mês de expiração do cartão</label>
+            <label class="labelV" for="expmonth" style="color: #e3e3e3;">Mês de expiração do cartão</label>
             <input class="inputV" type="text" id="expmonth" name="expmonth" placeholder="Dezembro">
             <div class="row">
               <div class="col-50">
-                <label class="labelV" for="expyear">Ano de Expiração</label>
+                <label class="labelV" for="expyear" style="color: #e3e3e3;">Ano de Expiração</label>
                 <input class="inputV" type="text" id="expyear" name="expyear" placeholder="2028">
               </div>
               <div class="col-50">
-                <label class="labelV" for="cvv">Código de Segurança</label>
+                <label class="labelV" for="cvv" style="color: #e3e3e3;">Código de Segurança</label>
                 <input class="inputV" type="text" id="cvv" name="cvv" placeholder="012">
               </div>
             </div>
           </div>
           
         </div>
-        <label class="labelV">
-          <input class="inputV" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input class="inputV" type="submit" value="Continue to checkout" class="btnv" style="background-color: rgb(85, 208, 87); border-radius: 5px;">
-      </form>
+        
+        
     </div>
   </div>
   <div class="col-25">
@@ -575,7 +577,7 @@
 
 <div class="col-25" >
     <div class="containerV" style="
-    margin: -10% 0% 2% 76.6%;">
+    margin: -15% -1% 0% 76.9%;">
     
     <label for="nome" style="box-shadow: none !important;"><b>Escolha o Jogo</b></label><br>
             <input type="text" name="nome" placeholder="Jogo" id="nome" style=" box-shadow: none !important;">
@@ -584,18 +586,10 @@
             <label for="nome" style="box-shadow: none !important;"><b>Escolha a Quantidade</b></label><br>
             <input type="text" name="nome" placeholder="Quantidade" id="nome" style=" box-shadow: none !important;">
                 <br>
-                <br>    
-            <label for="nome" style=" box-shadow: none !important;"><b>Entre com o Endereço</b></label><br>
-            <input name="text" type="email" placeholder="Endereço" id="email" style=" box-shadow: none !important;" >
-                <br>
-                <br>
-                <label for="nome" style=" box-shadow: none !important;"><b>Entre com o Tipo de cartao</b></label><br>
-            <input name="text" type="email" placeholder="Cartao" id="email" style=" box-shadow: none !important;" >
+                <br>   
               </div>
             </div>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>R$444</b></span></p>
-    </div>
+      
   </div>
 
 
@@ -605,7 +599,6 @@
             <p><button class="btnE" type="submit" name="btnCadUsuario">Enviar</button></p>
         
         </form>
-        <p><button type="button" class="btnR" onclick="validar()">Verificar</button></p>
         </div>
         <br>
         <br>

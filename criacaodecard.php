@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>cadastro</title>
+    <title>Criar Cards</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.style.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/cadastro.js"></script>
@@ -14,7 +15,6 @@
     ::selection{background:rgba(157, 255, 159, 0.84);}
     ::-webkit-selection{background:rgba(157, 255, 159, 0.84);}
     ::-moz-selection{background:rgba(157, 255, 159, 0.84);}
-
     ins,del{text-decoration:none;}
     .t-caret{font-size:inherit;color:rgba(20, 21, 20, 0);}
     @media(max-width:800px){#t{width:400px;margin-left:-200px;}}    
@@ -26,31 +26,26 @@
     {
         background: url(/public/images/v6/colored_body_top2.png?v=2) center top no-repeat #222222;
     }
-
     .tc 
     {
         background: linear-gradient( to bottom, #365d3d 5%, rgba(72, 94, 42, 0) 70%);
     }
-
     body
     {
         font-family: 'Titillium Web', sans-serif;
         display: block;
         margin: 0;
     }
-
     h1, b
     {
         color: #f1f1f1;
         text-align: center; 
         margin-top: 0px;
     }
-
     h1
     {
         font-size: 25px;
     }
-
     h2
     {
         color: #ffffff;
@@ -58,7 +53,6 @@
         margin-top: 15px;
         margin-bottom: 35px;
     }
-
     ul.topnav 
     {
         list-style-type: none;
@@ -70,12 +64,10 @@
         border-bottom: inset 1px;
         border-bottom-color: #155916;
     }
-
     ul.topnav li 
     {
         float: left;
     }
-
     ul.topnav li a 
     {
         display: block;
@@ -84,23 +76,19 @@
         padding: 16px 16px;
         text-decoration: none;
     }
-
     ul.topnav li a:hover:not(.active) 
     {
         background-color: rgba(74, 255, 128, 0.42);
         transition: 0.8s;
     }
-
     ul.topnav li a.active 
     {
         background-color: #3b6679;
     }
-
     ul.topnav li.right 
     {
         float: right;
     }
-
     @media screen and (max-width: 600px) 
     {
     ul.topnav li.right, ul.topnav li 
@@ -119,12 +107,10 @@
         border-bottom: inset 1.5px;
         border-bottom-color: #5efb60;
     }
-
     ul.topnav li 
     {
         float: left;
     }
-
     ul.topnav li a 
     {
         display: block;
@@ -133,29 +119,24 @@
         padding: 16px 16px;
         text-decoration: none;
     }
-
     ul.topnav li a:hover:not(.active) 
     {
         background-color: rgba(74, 255, 128, 0.42);
       transition: 0.8s;
     }
-
     ul.topnav li a.active 
     {
         background-color: rgb(48, 86, 39);
     }
-
     ul.topnav li a.active:hover
     {
       background-color: rgba(74, 255, 128, 0.42);
       transition: 0.8s;
     }
-
     ul.topnav li.right 
     {
         float: right;
     }
-
     @media screen and (max-width: 600px) 
     {
         ul.topnav li.right, ul.topnav li 
@@ -163,13 +144,12 @@
             float: unset;
         }
     }
-
     .logo 
     {
         height: 52px;
         width: 77px;
         position: absolute;
-        margin: 0% 47% 0% 47%;
+        margin: 0% 38% 0% 38%;
         border-radius: 10px;
         cursor: pointer;
     }
@@ -178,7 +158,6 @@
         vertical-align: middle;
         border-style: none;
     }
-
     @media screen and (max-width: 600px)
     {
         .logo
@@ -198,9 +177,7 @@
         padding-right: 1rem;
         padding-bottom: 0.5rem;
         padding-left: 1rem;
-
     }
-
     input
     {
         padding: 10px;
@@ -214,7 +191,6 @@
         border-right: hidden;
         border-bottom-color: rgba(0, 255, 11, 0.64) !important;
     }
-
     input[type=text]:focus, input[type=password]:focus, input[type=email]:focus 
     {
         background-color: rgba(157, 255, 159, 0.84) !important;
@@ -225,7 +201,6 @@
         border-right: hidden;
         border-bottom-color: rgba(0, 255, 11, 0.64) !important;
     }
-
     fieldset  
     {
         margin: 0% 30% 0% 30%;
@@ -240,7 +215,6 @@
         padding-block-end: 0;
         border-color: #1918183d !important;
     }
-
     fieldset :hover
     {
         box-shadow: 3px 4px 20px 1px rgba(0, 0, 0, 0.67);
@@ -251,12 +225,9 @@
         border: none;
         box-shadow: none;
     }
-
     .btnS
     {
-
     }
-
     .btnR
     {
         background-color: #111;
@@ -276,7 +247,6 @@
         position: absolute;
         margin: 0% 36% 0% 36%;
     }
-
     .btnE
     {
         background-color: #111;
@@ -294,21 +264,18 @@
         align-content: center;
         justify-content: space-between;
         position: absolute;
-        margin: 0% 57% 0% 57%;
+        margin: 0% 47% 0% 47.5%;
     }
-
     .btnS p:hover .btnR
     {
         background-color: rgba(87, 152, 88, 0.9);
         transition: 0.8s;
     }
-
     .btnS p:hover .btnE
     {
         background-color: rgba(87, 152, 88, 0.9);
         transition: 0.8s;
     }
-
     footer
   {
     background-color: #1b1b1b;
@@ -316,14 +283,12 @@
     border-bottom: inset 1px;
     border-bottom-color: #5efb60;
   }
-
   footer p
   {
     padding-top: 10px;
     text-align: center;
     color: #9c9c9c;
   }
-
   .logoF
   {
     display: block;
@@ -333,7 +298,6 @@
     margin: 2% 47% 0% 47%;
     border-radius: 10px;
   }
-
   @media screen and (max-width: 1160px)
   {
     .logoF
@@ -346,7 +310,6 @@
       border-radius: 10px;
     }
   }
-
   @media screen and (max-width: 700px)
   {
     .logoF
@@ -359,7 +322,6 @@
       border-radius: 10px;
     }
   }
-
   @media screen and (max-width: 660px)
   {
     .logoF
@@ -367,7 +329,6 @@
       display: none;
     }
   }
-
   @media screen and (max-width: 480px)
   {
     .logoF
@@ -391,7 +352,7 @@
 
         <div class="tc">
         <br>
-            <h2>Insira Seus Dados</h2>
+            <h2>Criação Do Card</h2>
 
         <!-- Formulário -->
         <?php
@@ -405,24 +366,31 @@
             <div class="caixa1">
             <form  action="cad2.php" method="POST" style="border: none; box-shadow: none;">
                 
-            <h1 style="box-shadow: none;">Informações Principais</h1>
-            <label for="nome" style="box-shadow: none !important;"><b>ID</b></label><br>
-            <input type="text" name="nome" placeholder="Enter ID" id="nome" style=" box-shadow: none !important;">
+            <h1 style="box-shadow: none;">Insira As Informações Do Card</h1>
+            <label for="nome" style="box-shadow: none !important;"><b>Nome do Jogo</b></label><br>
+            <input type="text" name="nome" placeholder="Jogo" id="nome" style=" box-shadow: none !important;">
                 <br>
                 <br>
-            <label for="email" style=" box-shadow: none !important;"><b>E-mail</b></label><br>
-            <input name="email" type="email" placeholder="Enter E-mail" id="email" style=" box-shadow: none !important;" >
+            <label for="nome" style="box-shadow: none !important;"><b>Categoria</b></label><br>
+            <input type="text" name="nome" placeholder="Categoria" id="nome" style=" box-shadow: none !important;">
+                <br>
+                <br>    
+            <label for="nome" style=" box-shadow: none !important;"><b>Preço</b></label><br>
+            <input name="text" type="email" placeholder="Preço" id="email" style=" box-shadow: none !important;" >
                 <br>
                 <br>
-            <label for="usuario" style=" box-shadow: none !important;"><b>Nick-Name</b></label><br>
-            <input name="usuario" type="text" placeholder="Enter Nick-Name" id="usuario" style=" box-shadow: none !important;" >
+                <label for="nome" style=" box-shadow: none !important;"><b>Detalhes</b></label><br>
+            <input name="text" type="email" placeholder="Detalhes" id="email" style=" box-shadow: none !important;" >
                 <br>
+                <br>    
+            <label for="nome" style=" box-shadow: none !important;"><b>Requisitos Mínimos pra Rodar</b></label><br>
+            <input name="text" type="email" placeholder="Requisitos Mínimos" id="email" style=" box-shadow: none !important;">
+            <br>
+            <br>
+            <p><button class="btnR" name="btnCadUsuario">Escolher Imagem</button></p>
                 <br>
-            <label for="senha" style=" box-shadow: none !important;"><b>Senha</b></label><br>
-            <input type="password" name="senha" placeholder="Enter Password" id="senha" style=" box-shadow: none !important;" required>
-                <br>
-                <br>
-		
+                <br>    
+ 		
 
         </div>
         </fieldset>
@@ -438,7 +406,6 @@
             <p><button class="btnE" type="submit" name="btnCadUsuario">Enviar</button></p>
         
         </form>
-        <p><button type="button" class="btnR" onclick="validar()">Verificar</button></p>
         </div>
         <br>
         <br>
@@ -456,4 +423,3 @@
     
 </body>
 </html>
-

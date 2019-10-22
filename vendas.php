@@ -5,8 +5,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Efetuando Compra</title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/main.style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
+<script src="js/cadastro.js"></script>
 <style>
 
 * {
@@ -830,13 +832,9 @@ html
     {
       display: none;
     }
-  }<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="print.css" type="text/css" media="print">
+  }
+  </style>
+  
 <!-- Seleção -->
   <style type="text/css">
     ::selection{background:rgba(157, 255, 159, 0.84);}
@@ -1554,7 +1552,6 @@ html
 input:focus { 
   border: 1px solid #3ffb60;
   border-radius: 4px;
-  width: 30%;
   z-index: 1;
   transition: width 1s ease-in;
   
@@ -1700,111 +1697,7 @@ li.dropdown {
   
 <!-- FIM/Menu -->
 
-<h2 style="margin: 20px;">Informe seus dados para efetuar a compra</h2>
-<div class="row">
 
-  <div class="col-75">
-    <div class="containerV">
-      <form action="/action_page.php">
-      
-        <div class="row">
-          <div class="col-50">
-            <h3>Informações Pessoais</h3>
-            <label class="labelV" for="fname"><i class="fa fa-user"></i> Nome Completo</label>
-            <input class="inputV" type="text" id="fname" name="firstname" placeholder="Insira seu nome">
-            <label class="labelV" for="email"><i class="fa fa-envelope"></i> E-mail</label>
-            <input class="inputV" type="text" id="email" name="email" placeholder="ifsp@exemplo.com">
-            <label class="labelV" for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
-            <input class="inputV" type="text" id="adr" name="address" placeholder="Rua 14, Número 93, Martim">
-            <label class="labelV" for="city"><i class="fa fa-institution"></i> Cidade</label>
-            <input class="inputV" type="text" id="city" name="city" placeholder="Caraguatatuba">
-
-            <div class="row">
-              <div class="col-50">
-                <label class="labelV" for="state">Estado</label>
-                <input class="inputV" type="text" id="state" name="state" placeholder="SP">
-              </div>
-              <div class="col-50">
-                <label class="labelV" for="zip">CEP</label>
-                <input class="inputV" type="text" id="zip" name="zip" placeholder="12345-678">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Pagamento</h3>
-            <label class="labelV" for="fname">Cartões Aceitáveis</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label class="labelV" for="cname">Nome no cartão</label>
-            <input class="inputV" type="text" id="cname" name="cardname" placeholder="Cleitu Rasta">
-            <label class="labelV" for="ccnum">Número do cartão de crédito</label>
-            <input class="inputV" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label class="labelV" for="expmonth">Mês de expiração do cartão</label>
-            <input class="inputV" type="text" id="expmonth" name="expmonth" placeholder="Dezembro">
-            <div class="row">
-              <div class="col-50">
-                <label class="labelV" for="expyear">Ano de Expiração</label>
-                <input class="inputV" type="text" id="expyear" name="expyear" placeholder="2028">
-              </div>
-              <div class="col-50">
-                <label class="labelV" for="cvv">Código de Segurança</label>
-                <input class="inputV" type="text" id="cvv" name="cvv" placeholder="012">
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <label class="labelV">
-          <input class="inputV" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input class="inputV" type="submit" value="Continue to checkout" class="btnv" style="background-color: rgb(85, 208, 87); border-radius: 5px;">
-      </form>
-    </div>
-  </div>
-  <div class="col-25">
-    <div class="containerV" >
-    
-      <h4>Carrinho <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Produto 1</a> <span class="price">R$150</span></p>
-      <p><a href="#">Produto 2</a> <span class="price">R$36</span></p>
-      <p><a href="#">Produto 3</a> <span class="price">R$59</span></p>
-      <p><a href="#">Produto 4</a> <span class="price">R$199</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>R$444</b></span></p>
-    </div>
-  </div>
-</div>
-
-<div class="col-25" >
-    <div class="containerV" style="
-    margin: -10% 0% 2% 76.6%;">
-    
-      <h4>Carrinho <span class="price" style="color:black"></span></h4>
-      <label class="labelV" for="cname">Nome no cartão</label>
-            <input class="inputV" type="text" id="cname" name="cardname" placeholder="Cleitu Rasta">
-            <label class="labelV" for="ccnum">Número do cartão de crédito</label>
-            <input class="inputV" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label class="labelV" for="expmonth">Mês de expiração do cartão</label>
-            <input class="inputV" type="text" id="expmonth" name="expmonth" placeholder="Dezembro">
-            <div class="row">
-              <div class="col-50">
-                <label class="labelV" for="expyear">Ano de Expiração</label>
-                <input class="inputV" type="text" id="expyear" name="expyear" placeholder="2028">
-              </div>
-              <div class="col-50">
-                <label class="labelV" for="cvv">Código de Segurança</label>
-                <input class="inputV" type="text" id="cvv" name="cvv" placeholder="012">
-              </div>
-            </div>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>R$444</b></span></p>
-    </div>
-  </div>
 
 <div class="tc">
         <br>
@@ -1853,7 +1746,6 @@ li.dropdown {
             <p><button class="btnE" type="submit" name="btnCadUsuario">Enviar</button></p>
         
         </form>
-        <p><button type="button" class="btnR" onclick="validar()">Verificar</button></p>
         </div>
         <br>
         <br>
@@ -1868,4 +1760,64 @@ li.dropdown {
     <!-- FIM/footer -->
 
 </body>
+
+<script>
+// botão Menu
+  function openNav() 
+  {
+    document.getElementById("myNav").style.height = "100%";
+  }
+
+  function closeNav() 
+  {
+    document.getElementById("myNav").style.height = "0%";
+  }
+// Fim Botão
+
+// Slide
+  var slideIndex = 1;
+    showDivs(slideIndex);
+
+  function plusDivs(n) 
+  {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) 
+  {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) 
+  {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); 
+  }
+  // Fim Slide
+</script>
 </html>

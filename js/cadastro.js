@@ -1,3 +1,4 @@
+// cadastro
 function validar(){
     
     var nome = document.getElementById("nome");
@@ -37,3 +38,4 @@ function validar(){
     }
 
 }
+// fim cadastro
