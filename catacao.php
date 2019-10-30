@@ -861,6 +861,10 @@ li.dropdown {
   right: 7%;
   top: 55px;
 }
+.preço
+{
+  
+}
 </style>
 
 </head>
@@ -916,11 +920,11 @@ li.dropdown {
             <div class="card">
               <div class="card-image">
                 <a href="PaginaVendaAcao.php?id_curso=<?php echo $rows_cursos['id']; ?>">
-                <img src="img/<?php echo $rows_cursos['caminho_img']; ?>" alt="...">
+                <img style="height:300px;width=300px;" src="img/<?php echo $rows_cursos['caminho_img']; ?>"  alt="...">
                 </a>
               </div>
               <div class="card-content">
-                <p><?php echo $rows_cursos['precop']; ?></p>
+                <p class="price">R$<?php echo $rows_cursos['precop']; ?></p>
               </div>
 
               <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class="btn-floating orange "><i class="material-icons" style="color:white;">edit</i></a>
@@ -929,7 +933,7 @@ li.dropdown {
               <div class="modal-content">
                 <p>Tem certeza que deseja excluir esse cliente?</p>
               </div>
-              <div class="modal-footer">               
+              <div class="modal- footer">               
 
                 <form action="deleteproduto.php" method="POST">
                   <input type="hidden" name="id" value="<?php echo $rows_cursos['id']; ?>">
