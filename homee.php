@@ -1638,7 +1638,7 @@ li.dropdown {
           <a href="catgratis.php">Gratuito</a>
         </div>
       </li>
-      <li class="right"><a href="adicionarp.php">adicionar</a></li>
+      <li class="left"><a href="adicionarp.php">adicionar</a></li>
       <div class="logado">
       
       <?php

@@ -9,6 +9,7 @@ session_start();
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!-- Seleção -->
   <style type="text/css">
     ::selection{background:rgba(157, 255, 159, 0.84);}
@@ -911,7 +912,7 @@ li.dropdown {
           ?>
 
           <?php while($rows_cursos = mysqli_fetch_assoc($resultado_cursos)){ ?>
-          <div class="col s6 m4 l3">
+          <div class="">
             <div class="card">
               <div class="card-image">
                 <a href="PaginaVendaAcao.php?id_curso=<?php echo $rows_cursos['id']; ?>">
@@ -921,14 +922,11 @@ li.dropdown {
               <div class="card-content">
                 <p><?php echo $rows_cursos['precop']; ?></p>
               </div>
-              <div class="card-action">
-                <a href="#">Adicionar ao carrinho</a>
-              </div>
-              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class="btn-floating orange "><i class="material-icons">edit</i></a>
-                <td><a href="#modal<?php echo $rows_cursos['id']; ?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</i></a></td>
+
+              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class="btn-floating orange "><i class="material-icons" style="color:white;">edit</i></a>
+                <td><a href="#modal<?php echo $rows_cursos['id']; ?>" class="btn-floating red modal-trigger"><i class="material-icons" style="color:white;">delete</i></a></td>
               <div id="modal<?php echo $rows_cursos['id']; ?>" class="modal">
               <div class="modal-content">
-                <h4>Opa!</h4>
                 <p>Tem certeza que deseja excluir esse cliente?</p>
               </div>
               <div class="modal-footer">               
@@ -940,7 +938,9 @@ li.dropdown {
                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
 
                 </form>
-
+                <div class="card-action">
+                <a href="#">Adicionar ao carrinho</a>
+              </div>
               </div>
             </div>
             </div>
