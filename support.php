@@ -141,7 +141,7 @@
         height: 52px;
         width: 77px;
         position: absolute;
-        margin: 0% 47% 0% 47%;
+        margin: 0% 47% 0% 34%;
         border-radius: 10px;
         cursor: pointer;
     }
