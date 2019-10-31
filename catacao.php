@@ -943,7 +943,7 @@ li.dropdown {
 
                 </form>
                 <div class="card-action">
-                <a href="#">Adicionar ao carrinho</a>
+                <p><button>+ CARRINHO</button></p>
               </div>
               </div>
             </div>
