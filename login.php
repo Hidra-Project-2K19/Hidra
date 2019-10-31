@@ -399,7 +399,7 @@
 <body>
 <!-- Menu -->
 <ul class="topnav">
-<a href="home.php"><img style="vertical-align: middle; height: 52px; width: 77px; position: absolute; margin: 0% 47% 0% 34%; border-radius: 10px; cursor: pointer;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
+<a href="home.php"><img style="vertical-align: middle; height: 52px; width: 77px; position: absolute;    margin: 0% 49% 0% 34%; border-radius: 10px; cursor: pointer;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
             <li><a class="active" href="home.php">Home</a></li>
             <li><a href="account.php">Conta</a></li>
             <li><a href="support.php">Suporte</a></li>
@@ -413,10 +413,10 @@
             <h1>Login</h1>
 
             <label for="usuario"><b>ID</b></label>
-            <input type="text" placeholder="Enter ID" name="usuario" required style="margin-top: 50%; margin-left: -15%;">
+            <input type="text" placeholder="Enter ID" name="usuario" required>
 
             <label for="senha"><b>Senha</b></label>
-            <input type="password" placeholder="Enter Password" name="senha" required style="margin-top: 90%; margin-left: -15%;">
+            <input type="password" placeholder="Enter Password" name="senha" required style=>
 
             <button type="submit" id="entrar" name="entrar" class="btn" style="margin-top: 100%;"><a>ENTRAR</button></a>
         </form>
