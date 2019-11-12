@@ -924,24 +924,25 @@ li.dropdown {
                 </a>
               </div>
               <div class="card-content">
-                <p class="price">R$<?php echo $rows_cursos['precop']; ?></p>
+              <h1><?php echo $rows_cursos['nomep']; ?></h1>
+              <p class="price">R$<?php echo $rows_cursos['precop']; ?></p>
               </div>
 
-              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class="btn-floating orange "><i class="material-icons" style="color:white;">edit</i></a>
-                <td><a href="#modal<?php echo $rows_cursos['id']; ?>" class="btn-floating red modal-trigger"><i class="material-icons" style="color:white;">delete</i></a></td>
+              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class=" "><i class="material-icons" style="color:white;">edit</i></a>
               <div id="modal<?php echo $rows_cursos['id']; ?>" class="modal">
               <div class="modal-content">
-                <p>Tem certeza que deseja excluir esse cliente?</p>
+                
               </div>
               <div class="modal- footer">               
 
                 <form action="deleteproduto.php" method="POST">
                   <input type="hidden" name="id" value="<?php echo $rows_cursos['id']; ?>">
-                  <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar</button>
+                  <button type="submit" name="btn-deletar" class="price"><i class="material-icons" style="color:white;">delete</i></button>
 
-                   <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+            
 
                 </form>
+                <p>Disponível na Plataforma Hydra</p>
                 <div class="card-action">
                 <p><button>+ CARRINHO</button></p>
               </div>
