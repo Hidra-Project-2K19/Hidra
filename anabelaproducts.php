@@ -96,10 +96,10 @@ session_start();
                 <p style="margin-top: 80px; color: #513f36; font-weight: bold; font-size: 20px;"><?php echo $rows_cursos['nome']; ?></p>
               </div>
               <div class="card-content center">
-                <p style="margin-top: 60px; color: black; font-weight: ">Tamanho: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['tamanho']; ?></span></p>
+                <p style="margin-top: 60px; color: black; font-weight: ">Preço: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['precop']; ?></span></p>
               </div>
               <div class="card-content center">
-                <p style="color: black; font-weight: ">Preço: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['preco']; ?></span></p>
+                <p style="color: black; font-weight: ">Descrição: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['descricaop']; ?></span></p>
               </div>
               <div class="card-content center">
                 <p style="color: black; font-weight:">Em estoque: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['estoque']; ?></span></p>
