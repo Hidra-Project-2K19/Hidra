@@ -883,7 +883,7 @@ li.dropdown {
 
     <!-- Menu -->
     <ul class="topnav">
-    <a href="home.php"><img style="vertical-align: middle;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
+    <a href="home.php"><img style="vertical-align: middle;     margin: 0% 47% 0% 47%;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
       <button class="openbtn" onclick="openNav()"><img src="img/12.png" alt="1" width="30px" height="30px"> </button>  
       <li class="right"><a href="login.php">Login</a></li>
       <li class="right"><a href="account.php">Conta</a></li>

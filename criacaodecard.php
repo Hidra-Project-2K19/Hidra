@@ -345,7 +345,7 @@
         <ul class="topnav">
         <a href="home.php"><img style="vertical-align: middle;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
             <li><a class="active" href="home.php">Home</a></li>
-            <li><a href="suport.php">Suporte</a></li>
+            <li><a href="support.php">Suporte</a></li>
             <li class="right"><a href="login.php">Login</a></li>
         </ul>
      <!-- FIM/menu -->
@@ -368,23 +368,24 @@
                 
             <h1 style="box-shadow: none;">Insira As Informações Do Card</h1>
             <label for="nome" style="box-shadow: none !important;"><b>Nome do Jogo</b></label><br>
-            <input type="text" name="nome" placeholder="Jogo" id="nome" style=" box-shadow: none !important;">
+
+            <input type="text" name="nome" placeholder="Jogo" id="nome" style=" box-shadow: none !important;  top: 16%;">
                 <br>
                 <br>
-            <label for="nome" style="box-shadow: none !important;"><b>Categoria</b></label><br>
-            <input type="text" name="nome" placeholder="Categoria" id="nome" style=" box-shadow: none !important;">
+            <label for="nome" style="box-shadow: none !important; "><b>Categoria</b></label><br>
+            <input type="text" name="nome" placeholder="Categoria" id="nome" style=" box-shadow: none !important; top: 31%;">
                 <br>
                 <br>    
-            <label for="nome" style=" box-shadow: none !important;"><b>Preço</b></label><br>
-            <input name="text" type="email" placeholder="Preço" id="email" style=" box-shadow: none !important;" >
+            <label for="nome" style=" box-shadow: none !important; "><b>Preço</b></label><br>
+            <input name="text" type="email" placeholder="Preço" id="email" style=" box-shadow: none !important; top: 47%;" >
                 <br>
                 <br>
-                <label for="nome" style=" box-shadow: none !important;"><b>Detalhes</b></label><br>
-            <input name="text" type="email" placeholder="Detalhes" id="email" style=" box-shadow: none !important;" >
+                <label for="nome" style=" box-shadow: none !important; "><b>Detalhes</b></label><br>
+            <input name="text" type="email" placeholder="Detalhes" id="email" style=" box-shadow: none !important; top: 62%;" >
                 <br>
                 <br>    
             <label for="nome" style=" box-shadow: none !important;"><b>Requisitos Mínimos pra Rodar</b></label><br>
-            <input name="text" type="email" placeholder="Requisitos Mínimos" id="email" style=" box-shadow: none !important;">
+            <input name="text" type="email" placeholder="Requisitos Mínimos" id="email" style=" box-shadow: none !important;  top: 76%;">
             <br>
             <br>
             <p><button class="btnR" name="btnCadUsuario">Escolher Imagem</button></p>

@@ -14,6 +14,33 @@ session_start();
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/main.style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
+
+
+</head>
+<body>
+<!-- MenuBTN -->
+<div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+      <a id="Hydrass" href="#" style="color: #39bd7a; margin: -8% 0% 8% 0%; /* margin-bottom: 4%; */">Hydra Games</a>
+      <br>
+        <a href="account.php">Conta</a>
+        <a href="sobre.php">Sobre</a>
+        <a href="support.php">suporte</a>
+        <a href="carofthecompres.php">Carrinho</a>
+      </div>
+    </div>
+    <!-- FIM/MenuBTN -->
+
+<!-- Login -->
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Início - Logado </title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/main.style.css">
+<link rel="stylesheet" href="print.css" type="text/css" media="print">
 <!-- Seleção -->
   <style type="text/css">
     ::selection{background:rgba(157, 255, 159, 0.84);}
@@ -1555,49 +1582,7 @@ label {display: block;}
   input {width: 30%;}
 
 
-  li a, .dropbtn {
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a.dropbtn{
-  position: absolute;
-  padding: 16px 14px 15px;
-  right: 10%;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  position: relative;
-  color: black;
-  padding: 12px 16px;
-  padding: 16px 14px 15px 85%;
-  text-decoration: none;
-  display: block;
-  background: #333;
-}
-
-.dropdown-content a:hover {background-color: #171717;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  right: 7%;
-  top: 55px;
-}
+ 
 </style>
 
 </head>
@@ -1618,6 +1603,7 @@ li.dropdown {
 
 <!-- Login -->
     
+
 
 <!-- FIM/Login -->
 
