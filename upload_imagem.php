@@ -4,4 +4,3 @@
 	
 	<input type="submit" value="Cadastrar">
 </form>
-<?php

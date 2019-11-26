@@ -15,126 +15,891 @@ session_start();
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
-    <title>Sapatop</title>
+    <title>Descrição</title>
+    <style>
+
+  html
+  {
+    background: center top no-repeat rgb(34, 34, 34);
+    background-image: linear-gradient(rgba(0, 255, 75, 0.16) 5%, rgba(72, 94, 42, 0) 70%);
+  }
+
+  body 
+  {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #FFFFFF;
+  }
+
+  h1:hover
+  {
+    color: #9df588;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+  p 
+  {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .overlay 
+  {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content 
+  {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a 
+  {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay #hydrass
+  {
+    color: #39bd7a;
+    position: relative;
+    margin: 1% 45% 10% 45%;
+  }
+
+  .overlay a:hover, .overlay a:focus 
+  {
+    color: #f1f1f1;
+    transition: 0.4s;
+  }
+
+  .overlay .closebtn 
+  {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) 
+  {
+    .overlay {overflow-y: auto;
+    }
+    .overlay a {font-size: 20px
+    }
+    .overlay .closebtn 
+    {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .openbtn 
+  {
+    font-size: 10px;
+    cursor: pointer;
+    background-color: #3333332e;
+    color: white;
+    border: none;
+    border-radius: -15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 35px;
+    padding: 3px 0px;
+  }
+
+  @media screen and (max-width: 600px) 
+  {
+    .openbtn 
+    {
+      position: relative;
+      float: left;
+      left: 48%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .openbtn:hover {
+    background-color: #44444487;
+    color: #99ffa9;
+    transition: 0.5s;
+  }
+
+/* Menu Rodrigo */
+  ul.topnav 
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 55px;
+    border-bottom: inset 1.5px;
+    border-bottom-color: #5efb60;
+  }
+
+  ul.topnav li 
+  {
+    float: left;
+  }
+
+  ul.topnav li a 
+  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+  /* hober button menu 
+  ul.topnav li a:hover:not(.active) 
+  {
+    background-color: #36515d;
+  }
+  */
+
+  ul.topnav li a.active 
+  {
+    background-color: #3b6679;
+  }
+
+  ul.topnav li.right 
+  {
+    float: right;
+  }
+
+  @media screen and (max-width: 600px) 
+  {
+    ul.topnav li.right, ul.topnav li a
+    {
+      position: relative;
+      float: left;
+      left: 48%;
+    }
+  }
+      
+  ul.topnav 
+  {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  ul.topnav li 
+  {
+    float: left;
+  }
+
+  ul.topnav li a 
+  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+
+  /* hover button menu 
+  ul.topnav li a:hover:not(.active) 
+  {
+    background-color: #36515d;
+  }
+  */
+
+  ul.topnav li a:hover
+  {
+    color: #31c43f;
+    transition: 0.4s;
+  }
+
+  ul.topnav li a.active 
+  {
+    background-color: #3b6679;
+  }
+
+  ul.topnav li.right 
+  {
+    float: right;
+  }
+
+  @media screen and (max-width: 600px) 
+  {
+    ul.topnav li.right, ul.topnav li 
+    {
+      float: none;
+    }
+  }
+
+  .logo 
+  {
+    height: 52px;
+    width: 77px;
+    position: absolute;
+    margin: 0% 47% 0% 47%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  img
+  {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px)
+  {
+    .logo
+    {
+      display: none;
+    }
+  }
+/* Fim Menu Rodrigo*/
+
+/* Slides */
+  .slide
+  {
+    display: block;
+    position: relative;
+  }
+
+  * 
+  {
+    box-sizing:border-box
+  }
+
+  .mySlides 
+  {
+    display:none;
+    }
+
+  .w3-badge
+  {
+    height:13px;width:13px;
+    padding:0px;
+    color: #31c43f;
+  }
+
+  * 
+  {
+    box-sizing: border-box;
+  }
+
+  .w3-right, .w3-left, .w3-hover-text-khaki 
+  {
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  .w3-text-khaki, .w3-hover-text-khaki:hover 
+  {
+    color: #31c43f!important;
+  }
+
+  /* Float four columns side by side */
+  .column 
+  {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row 
+  {
+    margin: 0 -5px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after 
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px)
+   {
+    .column 
+    {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+/* Fim Slides */
+
+
+  .button 
+  {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: darkgreen;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 1150px;
+    border-radius: 10px;  
+  }
+
+  .button span 
+  {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after 
+  {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span 
+  {
+    padding-right: 25px;
+    transition: 0.4s;
+  }
+
+  .button:hover span:after 
+  {
+    opacity: 1;
+    right: 0;
+    transition: 0.4s;
+  }
+
+  /* Fim Slide */
+  
+  /* Genero */
+  .contclas
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131313;
+    height: 150px;
+    border-bottom: inset 1.5px;
+    border-bottom-color: #5efb60;
+    
+    
+  }
+  .contclascenter
+  {
+    text-align:center;
+    
+  }
+  .btcat
+  {
+    float:left;
+    margin-left:8%;
+    text-decoration:none;
+    
+  }
+  @media screen and (max-width: 1450px) 
+  {
+    .contclas
+    {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #131313;
+      height: 200px;
+      border-bottom: inset 1.5px;
+      border-bottom-color: #5efb60;
+      
+    }
+  }
+
+  .contclas h2:hover
+  {
+    color: #31c43f;
+  }
+
+  /* Fim Genero */
+
+/* Card */
+  .AWP
+  {
+    vertical-align: middle;
+    z-index: 1;
+    height: 1210px;
+  }
+
+
+  .card 
+  {
+    width: 300px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: none;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    background: #111;
+    margin-top: 30px;
+    position: relative;
+    margin: 1% 5% 1% 4%;
+    justify-content: space-between;
+    float: left;
+  }
+
+  #card1:hover , #card2:hover , #card3:hover , #card4:hover, #card5:hover, #card6:hover, #card7:hover, #card8:hover, #card9:hover, #card10:hover, #card11:hover, #card12:hover, #card13:hover, #card14:hover, #card15:hover, #card16:hover
+  {
+    box-shadow: 0 5px 18px 15px #00ff5730;
+    transition: 0.3s;
+    border-radius:10px;
+  }
+
+  @media screen and (max-width: 1891px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 8% 1% 8%;
+    }
+  }
+
+  @media screen and (max-width: 1747px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 8% 1% 18.7%;
+    }
+  }
+
+  @media screen and (max-width: 1680px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1.5% 1% 4.7%;
+    }
+  }
+
+  @media screen and (max-width: 1600px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 4.3% 1% 1.75%;
+    }
+  }
+
+  @media screen and (max-width: 1441px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1% 1% 2.7%;
+    }
+  }
+  @media screen and (max-width: 1366px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 1% 1% 1.7%;
+    }
+  }
+
+  @media screen and (max-width: 1304px) 
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 8% 1% 15.7% !important;
+    }
+  }
+
+  @media screen and (max-width: 1157px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 8% 1% 10% !important;
+    }
+  }
+
+  @media screen and (max-width: 954px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 10% 1% 35% !important;
+    }
+  }
+
+  @media screen and (max-width: 680px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 10% 1% 25% !important;
+    }
+  }
+
+  @media screen and (max-width: 535px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 10% 1% 20% !important;
+    }
+  }
+
+  @media screen and (max-width: 484px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 10% 1% 17% !important;
+    }
+  }
+
+  @media screen and (max-width: 280px)
+  {
+    .card
+    {
+      float: left;
+      margin: 1% 5% 1% 0% !important;
+    }
+  }
+
+  .price 
+  {
+    color: #2fb531;
+    font-size: 22px;
+  }
+
+  .card button 
+  {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #3131315c;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: -6%;
+    border-bottom: 1px solid #2fb531;
+  }
+
+  .card button:hover 
+  {
+    opacity: 0.7;
+    transition: 0.5s;
+    color: #8cff8d;
+  }
+
+  
+  /* Fim card */
+
+
+
+  .cont 
+  {
+    clear:both;
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    background-color: #42424252;
+    border-bottom: inset 1px;
+    border-bottom-color: #5efb60;
+    margin-top: -80px;
+}
+
+  .categorias
+  {
+    border:2px green;
+    border-radius:5px;
+    box-shadow: 0 4px 4px 0 white;
+    position:absolute;
+
+  }
+
+  footer
+  {
+    background-color: #1b1b1b;
+    height: 100px;
+    border-bottom: inset 1px;
+    border-bottom-color: #5efb60;
+    clear:both;
+  }
+
+  footer p
+  {
+    text-align: center;
+  }
+
+  .logoF
+  {
+    display: block;
+    height: 52px;
+    width: 77px;
+    position: absolute;
+    margin: 2% 47% 0% 47%;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1160px)
+  {
+    .logoF
+    {
+      display: block;
+      height: 52px;
+      width: 77px;
+      position: absolute;
+      margin: 4% 47% 0% 47%;
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 700px)
+  {
+    .logoF
+    {
+      display: block;
+      height: 52px;
+      width: 77px;
+      position: absolute;
+      margin: 10% 47% 0% 47%;
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 660px)
+  {
+    .logoF
+    {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px)
+  {
+    .logoF
+    {
+      display: none;
+    }
+  }
+  .catjogo{
+    color: #5efb60;
+    font-size:100px;
+    text-align:center;
+    
+  }
+  .catconteiner{
+    background-color: #10101052;
+    border:none;
+    margin:none;
+    padding:none;
+  }
+
+  .container {
+  width:100%;
+  position: relative;
+  height: 50px;
+}
+
+input {
+  height: 45px;
+  border: none;
+  outline: none;
+  padding-left: 50px;
+  width: 0;
+  position: absolute;
+  top: 4px;
+  left: 50px !important;
+  background:#6d6d6d;
+  z-index: 3;
+  transition: width 1s ease-out;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input:focus { 
+  border: 1px solid #3ffb60;
+  border-radius: 4px;
+  width: 30%;
+  z-index: 1;
+  transition: width 1s ease-in;
+  background: #6d6d6d;
+}
+.buscars { 
+  height: 50px;
+  width: 50px;
+  background:  url('lupa.png')  center no-repeat;
+  border: none;
+  position: absolute;
+  top: 2px;
+  left: 470px;
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+}
+.buscars:focus {
+  outline: none;
+} 
+/* esconde o LABEL "Buscar" */
+ label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;	
+} 
+
+
+label {display: block;}
+  input, button {padding: 10px;}
+  input {width: 30%;}
+
+
+  li a, .dropbtn {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a.dropbtn{
+  position: absolute;
+  padding: 16px 14px 15px;
+  right: 10%;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  position: relative;
+  color: black;
+  padding: 12px 16px;
+  padding: 16px 14px 15px 85%;
+  text-decoration: none;
+  display: block;
+  background: #333;
+}
+
+.dropdown-content a:hover {background-color: #171717;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  right: 7%;
+  top: 55px;
+}
+.preço
+{
+  
+}
+.imgde{
+  height:500px;
+  width:500px;
+  margin-left:33%;
+}
+</style>
   </head>
   <body>
-    <!-- Menu tela grande -->
+   
     <header>
-      <div class="navbar-fixed">
-        <nav style="background-color: #faf2ee" >
-          <ul id="dropdown1" class="dropdown-content">
-            <?php if(isset($_SESSION['id']) && !empty($_SESSION['id'])) { ?>
-            <li><a href="./cadastro/logout.php">Sair</a></li>
-            <?php } else { ?>
-            <li><a href="./cadastro/login.php">Login</a></li>
-            <li class="divider"></li>
-            <li><a href="./cadastro/cadastrar.php">Cadastro</a></li>
-            <?php } ?>
-          </ul>
-          <ul id="dropdown2" class="dropdown-content">
-            <li><a href="tenis1.php">Tênis</a></li>
-            <li><a href="mule1.php">Mule</a></li>
-            <li><a href="scarpin1.php">Scarpin</a></li>
-          </ul>
-          <ul id="dropdown3" class="dropdown-content">
-            <li><a href="sapatilha1.php">Sapatilhas</a></li>
-            <li><a href="anabela1.php">Anabelas</a></li>
-            <li><a href="rasteira1.php">Rasteiras</a></li>
-          </ul>
-          <div class="nav-wrapper">
-            <a href="index.php" class="brand-logo center" style="font-family: 'Ranga', cursive; font-size:50px; color: #4b392e;">Sapatop</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" style="color: #4b392e; font-size: 15px;"><i class="material-icons right">perm_identity arrow_drop_down</i></a></li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="" href="#!" data-target="dropdown2" style="color: #4b392e; font-size: 15px;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;">Promoções<i class="material-icons right"></i></a></li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown2" style="color: #4b392e; font-size: 15px; font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;">Sapatos<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown3" style="color: #4b392e; font-size: 15px;font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;">Sandálias<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <!-- Menu mobile -->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="#" style="color: #4b392e;">Minha conta</a></li>
-        <li><a href="#" style="color: #4b392e;">Sandálias</a></li>
-        <li><a href="#" style="color: #4b392e;">Sapatos</a></li>
-        <li><a href="#!" style="color: #4b392e;">Promoções<i class="material-icons right"></i></a></li>
-        <li><a href="sobre.php" style="color: #4b392e;">Sobre</a></li>
-        <?php if(isset($_SESSION['id']) && !empty($_SESSION['id'])) { ?>
-        <li><a href="./cadastro/logout.php" style="color: #4b392e;">Sair</a></li>
-        <?php } else { ?>
-        <li class="divider"></li>
-        <li><a href="./cadastro/login.php" style="color: #4b392e;">Login</a></li>
-        <li><a href="./cadastro/cadastrar.php" style="color: #4b392e;">Cadastro</a></li>
-        <?php } ?>
+      
+
       </header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col s12 m1"></div>
-          <div class="col s12 m5">
-            <div class="card" style="box-shadow: none;">
-              <?php include_once("cadastro/conexao.php");
+      
+              <?php include_once("conexao.php");
                 $id_curso = $_GET['id_curso'];
-                $result_cursos = "SELECT * FROM produtos WHERE id='$id_curso'";
+                $result_cursos = "SELECT * FROM catacao  WHERE id='$id_curso'";
                 $resultado_cursos = mysqli_query($conn, $result_cursos);
                 ?>
                 <?php while($rows_cursos = mysqli_fetch_assoc($resultado_cursos)){ ?>
               <div class="card-image">
-                <img src="img/<?php echo $rows_cursos['caminho_img']; ?>" alt="...">
+                <img src="img/<?php echo $rows_cursos['caminho_img']; ?>" class="imgde" alt="...">
               </div>
             </div>
           </div>
-          <div class="col s12 m6">
-            <div class="card" style="box-shadow: none;">
-              <div class="card-content center">
-                <p style="margin-top: 80px; color: #513f36; font-weight: bold; font-size: 20px;"><?php echo $rows_cursos['nome']; ?></p>
-              </div>
-              <div class="card-content center">
-                <p style="margin-top: 60px; color: black; font-weight: ">Preço: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['precop']; ?></span></p>
-              </div>
-              <div class="card-content center">
-                <p style="color: black; font-weight: ">Descrição: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['descricaop']; ?></span></p>
-              </div>
-              <div class="card-content center">
-                <p style="color: black; font-weight:">Em estoque: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['estoque']; ?></span></p>
-              </div>
-              <div class="card-content">
-                <p></p>
-              </div>
-              <div class="card-action center" style="border-top: 0px; margin-top: 0px; ">
-                <a class="waves-effect waves-light btn" style="background-color: #faf2ee; color: #674c4c;">Comprar</a>
-              </div>
+          <div class="boxtext">
+            
+             
+                <h2 class="ti"><?php echo $rows_cursos['nomep']; ?></h2>
+             
+             
+                <h2 class="ti">Preço: <?php echo $rows_cursos['precop']; ?></h2>
+              
+              
+                <h2 class="ti">Descrição: <?php echo $rows_cursos['descricaop']; ?></h2>
+              
+            
+              
             </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col s12 m12">
-              <div class="card" style="box-shadow: none;">
-                <div class="card-content center">
-                  <p style="color: #513f36; font-weight: bold; font-size: 20px;">Descrição do produto</p>
-                </div>
-                <div class="card-content">
-                  <p>Cor: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['cor']; ?></span></p>
-                </div>
-                <div class="card-content">
-                  <p>Material: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['material']; ?></span></p>
-                </div>
-                <div class="card-content">
-                  <p>Material interno: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['material_inter']; ?></span></p>
-                </div>
-                <div class="card-content">
-                  <p>Salto: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['salto']; ?></span></p>
-                </div>
-                <div class="card-content">
-                  <p>Altura do salto: <span style="color: #513f36; font-weight: bold;"><?php echo $rows_cursos['alt_salto']; ?></span></p>
-                </div>
+       
+        
                 <?php } ?>
                 <!--
                 <div class="card-content">
@@ -144,75 +909,17 @@ session_start();
             </div>
           </div>
         </div>
-        <footer class="page-footer" style="background-color: #f5e2d8;">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col l3 s12">
-                <h5 style="color: #674c4c">Atendimento</h5>
-                <p class="text-lighten-4">
-                  <a class="text-lighten-3" style="color: #674c4c" href="#!">Perguntas Frequentes</a><br>
-                  <a class="text-lighten-3" style="color: #674c4c" href="#!">Trocas e Cancelamentos</a><br>
-                  <a class="text-lighten-3" style="color: #674c4c" href="politicas.php">Política de Privacidade</a><br>
-                  <a class="text-lighten-3" style="color: #674c4c" href="#!">Lojas</a><br>
-                  <a class="text-lighten-3" style="color: #674c4c" href="sobre.php">Quem somos</a><br>
-                  <a class="text-lighten-3" style="color: #674c4c" href="#!">Pagamento seguro</a></p>
-                </div>
-                <div class="col l3 s12">
-                  <h5 style="color: #674c4c">Contato</h5>
-                  <p style="color: #674c4c">
-                    Telefone: (51) 3564-6646<br>
-                    Whatsapp: (51) 99273-9456<br>
-                    Horário de atendimento:<br>
-                    De segunda à quinta-feira: das 7:00 às 11:00 e das 13:00 às 17:00.<br>
-                    De sexta:-feira: das 7:00 às 11:00 e das 13:00 às 16:00.<br>
-                  </p>
-                </div>
-                <div class="col l6 s12">
-                  <h5 style="color: #674c4c">Inscreve-se</h5><p>
-                    <form action="/pagina-processa-dados-do-form" method="post">
-                      <div>
-                        <a class="text-lighten-3" style="color: #674c4c" href="#!">Inscreva-se para receber mais novidades!</a><p>
-                        <input type="email" name="email" placeholder="Seu e-mail..." style="background-color: white;"><br>
+   
+
+
+                
                         
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col l3 s12">
-                      
-                    </div>
-                    <div class="col l3 s12">
-                      
-                      <ul>
-                        <li>
-                          <h5 style="color: #674c4c">Redes Socias</h5>
-                          <a href="#!">
-                            <img src="https://www.constance.com.br/skin/frontend/constance-v2018/default/images/insta.svg">
-                            <img src="https://www.constance.com.br/skin/frontend/constance-v2018/default/images/facebook.svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                              width="30" height="30"
-                              viewBox="0 0 172 172"
-                            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#674c4c"><path d="M172.215,35.905c-6.35594,2.82188 -13.16875,4.71656 -20.33094,5.57656c7.31,-4.38063 12.92687,-11.31438 15.56062,-19.565c-6.82625,4.04469 -14.41844,6.9875 -22.4675,8.57312c-6.45,-6.88 -15.64125,-11.16656 -25.81344,-11.16656c-19.53812,0 -35.38094,15.82937 -35.38094,35.3675c0,2.76812 0.3225,5.46906 0.92719,8.0625c-29.40125,-1.47813 -55.45656,-15.56063 -72.91187,-36.96656c-3.05031,5.24062 -4.78375,11.31437 -4.78375,17.79125c0,12.26844 6.235,23.09906 15.73531,29.455c-5.805,-0.18813 -11.26062,-1.78719 -16.03094,-4.43438c0,0.14781 0,0.29563 0,0.44344c0,17.14625 12.20125,31.43031 28.36656,34.69562c-2.95625,0.80625 -6.08719,1.23625 -9.31219,1.23625c-2.28438,0 -4.50156,-0.215 -6.665,-0.645c4.515,14.04219 17.57625,24.295 33.04281,24.57719c-12.09375,9.48688 -27.34531,15.13063 -43.92719,15.13063c-2.86219,0 -5.67062,-0.16125 -8.42531,-0.49719c15.64125,10.05125 34.23875,15.89656 54.22031,15.89656c65.06438,0 100.64688,-53.89781 100.64688,-100.63344c0,-1.53187 -0.04031,-3.07719 -0.09406,-4.58219c6.90687,-4.98531 12.9,-11.22031 17.64344,-18.31531z"></path></g></g></svg>
-                          </a>
-                        </ul>
-                      </div>
-                      <div class="col l5 s12">
-                      </div>
-                      <div class="col l1 s12">
-                      </div>
-                    </div>
-                    <div class="footer-copyright" style="color: #674c4c">
-                      <div class="container">
-                        Sapatop ©2019 - Comercio de calcados LTDA | CNPJ - 30.901.791/0001-91
-                        <a class=" right" href="#!" style="color: #674c4c" >More Links</a>
-                      </div>
-                    </div>
-                  </footer>
+        
                   <!-- Jquery -->
                   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
                   <!-- Materialize JS -->
                   <script type="text/javascript" src="js/materialize.min.js"></script>
-                  </script>
+                  
                   <script type="text/javascript">
                   $(document).ready(function(){
                   $('.modal').modal();
