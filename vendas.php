@@ -9,9 +9,6 @@
 <link rel="stylesheet" type="text/css" href="css/main.style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
 <script src="js/cadastro.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="print.css" type="text/css" media="print">
-
 </head>
 
 <body>
@@ -81,7 +78,6 @@
 
 <div class="tc">
         <br>
-            <h2>Insira Seus Dados Para Efetuar a Entrega do Jogo</h2>
 
         <!-- Formulário -->
         <?php
@@ -91,32 +87,7 @@
 			}
 		?>
 
-            <fieldset>
-            <div class="caixa1">
-            <form  action="cad2.php" method="POST" style="border: none; box-shadow: none;">
-                
-            <h1 style="box-shadow: none;">Informações Principais</h1>
-            <label for="nome" style="box-shadow: none !important;"><b>Escolha o Jogo</b></label><br>
-            <input type="text" name="nome" placeholder="Jogo" id="nome" style=" box-shadow: none !important;">
-                <br>
-                <br>
-            <label for="nome" style="box-shadow: none !important;"><b>Escolha a Quantidade</b></label><br>
-            <input type="text" name="nome" placeholder="Quantidade" id="nome" style=" box-shadow: none !important;">
-                <br>
-                <br>    
-            <label for="nome" style=" box-shadow: none !important;"><b>Entre com o Endereço</b></label><br>
-            <input name="text" type="email" placeholder="Endereço" id="email" style=" box-shadow: none !important;" >
-                <br>
-                <br>
-                <label for="nome" style=" box-shadow: none !important;"><b>Entre com o Tipo de cartao</b></label><br>
-            <input name="text" type="email" placeholder="Cartao" id="email" style=" box-shadow: none !important;" >
-		
-
-        </div>
-        </fieldset>
-    <!-- FIM/formulário -->
-        </form>
-        </div>
+           
         <br>
         <br>
     </div>
@@ -131,22 +102,22 @@
         <div class="row">
           <div class="col-50">
             <h3>Informações Pessoais</h3>
-            <label class="labelV" for="fname"><i class="fa fa-user"></i> Nome Completo</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="fname"><i class="fa fa-user"></i> Nome Completo</a>
             <input class="inputV" type="text" id="fname" name="firstname" placeholder="Insira seu nome">
-            <label class="labelV" for="email"><i class="fa fa-envelope"></i> E-mail</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="email"><i class="fa fa-envelope"></i> E-mail</a>
             <input class="inputV" type="text" id="email" name="email" placeholder="ifsp@example.com">
-            <label class="labelV" for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="adr"><i class="fa fa-address-card-o"></i> Endereço</a>
             <input class="inputV" type="text" id="adr" name="address" placeholder="Rua 14, Número 93, Martim">
-            <label class="labelV" for="city"><i class="fa fa-institution"></i> Cidade</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="city"><i class="fa fa-institution"></i> Cidade</a>
             <input class="inputV" type="text" id="city" name="city" placeholder="Caraguatatuba">
 
             <div class="row">
               <div class="col-50">
-                <label class="labelV" for="state">Estado</label>
+                <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="state">Estado</a>
                 <input class="inputV" type="text" id="state" name="state" placeholder="SP">
               </div>
               <div class="col-50">
-                <label class="labelV" for="zip">CEP</label>
+                <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="zip">CEP</a>
                 <input class="inputV" type="text" id="zip" name="zip" placeholder="12345-678">
               </div>
             </div>
@@ -154,26 +125,26 @@
 
           <div class="col-50">
             <h3>Payment</h3>
-            <label class="labelV" for="fname">Cartões Aceitáveis</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="fname">Cartões Aceitáveis</a>
             <div class="icon-container">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
               <i class="fa fa-cc-amex" style="color:blue;"></i>
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label class="labelV" for="cname">Nome no cartão</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="cname">Nome no cartão</a>
             <input class="inputV" type="text" id="cname" name="cardname" placeholder="Cleitu Rasta">
-            <label class="labelV" for="ccnum">Número do cartão de crédito</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="ccnum">Número do cartão de crédito</a>
             <input class="inputV" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label class="labelV" for="expmonth">Mês de expiração do cartão</label>
+            <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="expmonth">Mês de expiração do cartão</a>
             <input class="inputV" type="text" id="expmonth" name="expmonth" placeholder="Dezembro">
             <div class="row">
               <div class="col-50">
-                <label class="labelV" for="expyear">Ano de Expiração</label>
+                <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="expyear">Ano de Expiração</a>
                 <input class="inputV" type="text" id="expyear" name="expyear" placeholder="2028">
               </div>
               <div class="col-50">
-                <label class="labelV" for="cvv">Código de Segurança</label>
+                <a style="color: #f1f1f1; box-shadow: none !important;" class="labelV" for="cvv">Código de Segurança</a>
                 <input class="inputV" type="text" id="cvv" name="cvv" placeholder="012">
               </div>
             </div>
@@ -181,14 +152,13 @@
           
         </div>
         <label class="labelV">
-          <input class="inputV" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
+          <a style="color: #f1f1f1; box-shadow: none !important;" class="inputV" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing</a>
         <input class="inputV" type="submit" value="Continue to checkout" class="btnv" style="background-color: rgb(85, 208, 87); border-radius: 5px; margin: 3% 35%;">
       </form>
     </div>
   </div>
   <div class="col-25">
-    <div class="containerC" style="background-color: #1c1c1c; margin: -84.5% 6% 16% 79%; border: 1px solid black; border-radius: 3px; position: absolute;">
+    <div class="containerC" style="padding: 1% 3% 1% 3%; background-color: #1c1c1c; margin: -100.8% 6% 16% 79%; border: 1px solid black; border-radius: 3px; position: absolute;">
       <h4>Carrinho <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
       <p><a href="#">Produto 1</a> <span class="price">R$150</span></p>
       <p><a href="#">Produto 2</a> <span class="price">R$36</span></p>
@@ -207,7 +177,13 @@
                 <h1>Após Todos os Campos Estarem Verificados Corretamente, Clique em Enviar</h1>
     <!-- botões -->
         <div class="btnS">
-            <p><button class="btnEvendas" type="submit" name="btnCadUsuario">Enviar</button></p>
+            <p><button class="btnEvendas" onclick="compra()" name="btnCadUsuario">Enviar</button></p>
+            <script>
+        function compra() {
+        alert("Seu Produto Será Entregue Diretamente No Seu E-mail Informado Em Seu Cadastro!!                                                                                  Obrigado Por Comprar Em Hydra Games!");
+}
+</script>
+
 
 
 <!-- Footer -->

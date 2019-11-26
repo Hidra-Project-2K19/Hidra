@@ -154,12 +154,7 @@ if( isset($_COOKIE) ) {
     
 }
 ?>
-<a href="vendas.php"><button onclick="compra()" class="btnn">Efetuar Compra</button></a>
-<!-- <script>
-        function compra() {
-        alert("Seu Produto Será Entregue Diretamente No Seu E-mail Informado Em Seu Cadastro!!                                                                                  Obrigado Por Comprar Em Hydra Games!");
-}
-</script> -->
+<a href="vendas.php"><button class="btnn">Efetuar Compra</button></a>
 <table>
         <tr>
             <th>Imagem do Produto</th>
