@@ -11,10 +11,11 @@
 <!-- Menu -->
 <ul class="topnav">
 <a href="home.php"><img style="vertical-align: middle; height: 52px; width: 77px; position: absolute;    margin: 0% 49% 0% 34%; border-radius: 10px; cursor: pointer;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
-            <li><a class="active" href="home.php">Home</a></li>
-            <li><a href="account.php">Conta</a></li>
-            <li><a href="support.php">Suporte</a></li>
-            <li class="right"><a href="cadastrar.php">Cadastro</a></li>
+<a href="login.php">Conta</a>
+            <a href="login.php">Carrinho</a>
+            <a href="help.php">Ajuda</a>
+            <a href="support.php">Suporte</a>
+            <a href="sobre.php">Sobre</a>
         </ul>
      <!-- FIM/menu -->
 

@@ -27,10 +27,11 @@
       <a id="Hyd
       ,,rass" href="#" style="color: #39bd7a; margin: -8% 0% 8% 0%; /* margin-bottom: 4%; */">Hydra Games</a>
       <br>
-        <a href="account.php">Conta</a>
-        <a href="sobre.php">Sobre</a>
-        <a href="support.php">suporte</a>
-        <a href="carofthecompres.php">Carrinho</a>
+      <a href="login.php">Conta</a>
+            <a href="login.php">Carrinho</a>
+            <a href="help.php">Ajuda</a>
+            <a href="support.php">Suporte</a>
+            <a href="sobre.php">Sobre</a>
       </div>
     </div>
     <!-- FIM/MenuBTN -->
