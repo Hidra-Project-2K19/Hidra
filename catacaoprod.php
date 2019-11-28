@@ -864,6 +864,16 @@ li.dropdown {
   width:500px;
   margin-left:33%;
 }
+.parallax 
+{
+  
+  background-image: url('img/<?php echo $rows_cursos['caminho_img']; ?>');
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
   </head>
   <body>
@@ -880,7 +890,8 @@ li.dropdown {
                 ?>
                 <?php while($rows_cursos = mysqli_fetch_assoc($resultado_cursos)){ ?>
               <div class="card-image">
-                <img src="img/<?php echo $rows_cursos['caminho_img']; ?>" class="imgde" alt="...">
+                
+                <div class="parallax"></div>
               </div>
             </div>
           </div>
@@ -895,12 +906,27 @@ li.dropdown {
               
                 <h2 class="ti">Descrição: <?php echo $rows_cursos['descricaop']; ?></h2>
               
-            
-              
+                <?php ?>
+                  <style>
+                  
+                    .parallax 
+                      {
+                        
+                        background-image: url('img/<?php echo $rows_cursos['caminho_img']; ?>');
+                        min-height: 500px; 
+                        background-attachment: fixed;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                      }
+                  
+                  </style>
+               
+                <?php } ?>
             </div>
        
         
-                <?php } ?>
+  
                 <!--
                 <div class="card-content">
                   <p>Altura do salto: <span style="color: #513f36; font-weight: bold;">11.5cm</span></p>
