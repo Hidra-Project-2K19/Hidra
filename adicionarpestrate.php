@@ -402,7 +402,7 @@
 
         <fieldset>
         <div class="caixa1">
-            <form  action="adicionarcreate.php" method="POST" style="border: none; box-shadow: none;">
+            <form  action="adicionarcreateestrate.php" method="POST" style="border: none; box-shadow: none;">
                 
             <h1 style="box-shadow: none;">Informações Principais</h1>
             <label for="nomep" style="box-shadow: none !important;"><b>Nome do produto</b></label><br>

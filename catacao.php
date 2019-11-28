@@ -901,6 +901,7 @@ li.dropdown {
           <a href="catgratis.php">Gratuito</a>
         </div>
       </li>
+      <li class="left"><a href="adicionarpacao.php">adicionar</a></li>
     </ul>
   
 <!-- FIM/Menu -->
@@ -919,7 +920,7 @@ li.dropdown {
           <div class="">
             <div class="card">
               <div class="card-image">
-                <a href="anabelaproducts.php?id_curso=<?php echo $rows_cursos['id']; ?>">
+                <a href="catacaoprod.php?id_curso=<?php echo $rows_cursos['id']; ?>">
                 <img style="height:300px;width=300px;" src="img/<?php echo $rows_cursos['caminho_img']; ?>"  alt="...">
                 </a>
               </div>

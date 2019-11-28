@@ -892,6 +892,7 @@ li.dropdown {
           <a href="catgratis.php">Gratuito</a>
         </div>
       </li>
+      <li class="left"><a href="adicionarpestrate.php">adicionar</a></li>
     </ul>
   
 <!-- FIM/Menu -->
@@ -936,7 +937,47 @@ li.dropdown {
 
 </div>
 <div class="AWP">
+<?php include_once("conexao.php");
+            $result_cursos = "SELECT * FROM catestrate";
+            $resultado_cursos = mysqli_query($conn, $result_cursos);
+          ?>
 
+          <?php while($rows_cursos = mysqli_fetch_assoc($resultado_cursos)){ ?>
+          <div class="">
+            <div class="card">
+              <div class="card-image">
+                <a href="catestrateprod.php?id_curso=<?php echo $rows_cursos['id']; ?>">
+                <img style="height:300px;width=300px;" src="img/<?php echo $rows_cursos['caminho_img']; ?>"  alt="...">
+                </a>
+              </div>
+              <div class="card-content">
+              <h1><?php echo $rows_cursos['nomep']; ?></h1>
+              <p class="price">R$<?php echo $rows_cursos['precop']; ?></p>
+              </div>
+
+              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class=" "><i class="material-icons" style="color:white;">edit</i></a>
+              <div id="modal<?php echo $rows_cursos['id']; ?>" class="modal">
+              <div class="modal-content">
+                
+              </div>
+              <div class="modal- footer">               
+
+                <form action="deleteproduto.php" method="POST">
+                  <input type="hidden" name="id" value="<?php echo $rows_cursos['id']; ?>">
+                  <button type="submit" name="btn-deletar" class="price"><i class="material-icons" style="color:white;">delete</i></button>
+
+            
+
+                </form>
+                <p>Disponível na Plataforma Hydra</p>
+                <div class="card-action">
+                <p><button>+ CARRINHO</button></p>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <?php } ?>
   <div class="card" id="card11">
     <a href="caracteristicasOUT.php"><img src="img/outimg.jpg" alt="Denim Jeans" width="250px" height="300px"></a>
     <a href="caracteristicasOUT.php"><h1>Outlast II</h1></a>
