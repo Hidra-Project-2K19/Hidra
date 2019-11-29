@@ -147,7 +147,7 @@
         height: 52px;
         width: 77px;
         position: absolute;
-        margin: 0% 47% 0% 47%;
+        margin: 0% 47% 0% 40%;
         border-radius: 10px;
         cursor: pointer;
     }
@@ -243,7 +243,7 @@
         align-content: center;
         justify-content: space-between;
         position: absolute;
-        margin: 0% 36% 0% 36%;
+        margin: 0% 36% 0% 38%;
     }
     .btnE
     {
@@ -374,11 +374,11 @@
                 <br>
                 <br>    
             <label for="nome" style=" box-shadow: none !important;"><b>Preço</b></label><br>
-            <input name="text" type="email" placeholder="Preço" id="email" style=" box-shadow: none !important;" >
+            <input name="text" type="nome" placeholder="Preço" id="email" style=" box-shadow: none !important;" >
                 <br>
                 <br>
                 <label for="nome" style=" box-shadow: none !important;"><b>Detalhes</b></label><br>
-            <input name="text" type="email" placeholder="Detalhes" id="email" style=" box-shadow: none !important;" >
+            <input name="text" type="nome" placeholder="Detalhes" id="email" style=" box-shadow: none !important;" >
                 <br>
                 <br>    
             <label for="nome" style=" box-shadow: none !important;"><b>Ensira a Imagem</b></label><br>
@@ -386,7 +386,7 @@
                 <br>
                 <br>    
             <label for="nome" style=" box-shadow: none !important;"><b>Requisitos Minímos pra Rodar</b></label><br>
-            <input name="text" type="email" placeholder="Requisitos Minímos" id="email" style=" box-shadow: none !important;">
+            <input name="text" type="nome placeholder="Requisitos Minímos" id="email" style=" box-shadow: none !important;">
  		
 
         </div>
