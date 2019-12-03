@@ -313,7 +313,7 @@ footer
 
 
 
-<div class="parallax"></div>
+     <div class="parallax"></div>
 
 <div class="boxtext">
     <h1>Caracteristicas gerais<h1>
