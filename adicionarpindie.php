@@ -419,7 +419,9 @@
                 <br>
 
             <label for="caminho_img" style=" box-shadow: none !important;"><b>Preço</b></label><br>
-            <input name="caminho_img" type="text" placeholder="Imagem" id="caminho_img" style=" box-shadow: none !important;" >
+            <input name="caminho_img" type="file" placeholder="Imagem" id="caminho_img" style=" box-shadow: none !important;" >
+            <input name="caminho_img1" type="file" placeholder="Imagem" id="caminho_img" style=" box-shadow: none !important;" >
+            <input name="caminho_img2" type="file" placeholder="Imagem" id="caminho_img" style=" box-shadow: none !important;" >
             <button type="submit" name="btn-cadastrar" class="btn"> Cadastrar </button>
 					<a href="../index.php" class="btn green"> Página inicial </a>
             </form>

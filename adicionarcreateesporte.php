@@ -18,9 +18,10 @@ if(isset($_POST['btn-cadastrar'])):
 	$precop = clear($_POST['precop']);
 	$descricaop = clear($_POST['descricaop']);
 	$caminho_img = clear($_POST['caminho_img']);
-	
+	$caminho_img1 = clear($_POST['caminho_img1']);
+	$caminho_img2 = clear($_POST['caminho_img2']);
 
-	$sql = "INSERT INTO catesporte (nomep, precop, descricaop, caminho_img) VALUES ('$nomep', '$precop', '$descricaop', '$caminho_img')";
+	$sql = "INSERT INTO catesporte (nomep, precop, descricaop, caminho_img, caminho_img1, caminho_img2) VALUES ('$nomep', '$precop', '$descricaop', '$caminho_img','$caminho_img1','$caminho_img2')";
 
 	if(mysqli_query($conn, $sql)):
 		$_SESSION['mensagem'] = "Cadastrado com sucesso!";

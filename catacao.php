@@ -190,12 +190,12 @@ session_start();
     padding: 16px 16px;
     text-decoration: none;
   }
-  /* hober button menu 
+  hober button menu 
   ul.topnav li a:hover:not(.active) 
   {
     background-color: #36515d;
   }
-  */
+  
 
   ul.topnav li a.active 
   {
@@ -240,12 +240,7 @@ session_start();
     text-decoration: none;
   }
 
-  /* hover button menu 
-  ul.topnav li a:hover:not(.active) 
-  {
-    background-color: #36515d;
-  }
-  */
+ 
 
   ul.topnav li a:hover
   {
@@ -865,6 +860,24 @@ li.dropdown {
 {
   
 }
+.not
+{
+  border: none !important;
+  outline: none !important;
+  padding: none !important;
+  color: none !important;
+  background-color: #111 !important;
+  text-align: none !important;
+  cursor: pointer !important;
+  width: none !important;
+  font-size: none !important;
+  margin-bottom: none !important;
+  border-bottom: none !important;
+}
+.ver
+{
+  margin
+}
 </style>
 
 </head>
@@ -929,19 +942,26 @@ li.dropdown {
               <p class="price">R$<?php echo $rows_cursos['precop']; ?></p>
               </div>
 
-              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class=" "><i class="material-icons" style="color:white;">edit</i></a>
+              <a href="editar.php?id=<?php echo $rows_cursos['id']; ?>" class="ver"><i class="material-icons" style="color:white;">edit</i></a>
               <div id="modal<?php echo $rows_cursos['id']; ?>" class="modal">
               <div class="modal-content">
                 
               </div>
               <div class="modal- footer">               
-
                 <form action="deleteproduto.php" method="POST">
                   <input type="hidden" name="id" value="<?php echo $rows_cursos['id']; ?>">
-                  <button type="submit" name="btn-deletar" class="price"><i class="material-icons" style="color:white;">delete</i></button>
-
-            
-
+                  <button style="border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #3131315c;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+    margin-bottom: -6%;
+    border-bottom: 1px solid #2fb531;
+    margin: -5% 0% -5% -50%;" type="submit" name="btn-deletar" class="not"><i class="material-icons" style="color:white;">delete</i></button>
                 </form>
                 <p>Disponível na Plataforma Hydra</p>
                 <div class="card-action">
