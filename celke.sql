@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/06/2017 às 18:00
--- Versão do servidor: 5.7.14
--- Versão do PHP: 7.0.10
+-- Generation Time: 04-Dez-2019 às 18:47
+-- Versão do servidor: 10.1.37-MariaDB
+-- versão do PHP: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,17 +19,192 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `celke`
+-- Database: `celke`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuarios`
+-- Estrutura da tabela `catacao`
+--
+
+CREATE TABLE `catacao` (
+  `precop` mediumtext NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(200) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catacao`
+--
+
+INSERT INTO `catacao` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('100', 'erjbgrhggerg', 'qqq', 'ACblack.jpg', '', '', 48),
+('100', 'qqq', 'ca', 'ACblack.jpg', 'assassins1.jpg', 'assassins2.jpg', 49);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `catbatle`
+--
+
+CREATE TABLE `catbatle` (
+  `precop` text NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(200) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catbatle`
+--
+
+INSERT INTO `catbatle` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('qqq', 'erjbgrhggerg', 'qqq', 'god1.jpg', '', '', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `catesporte`
+--
+
+CREATE TABLE `catesporte` (
+  `precop` text NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(200) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catesporte`
+--
+
+INSERT INTO `catesporte` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('100', 'erjbgrhggerg', 'qqq', 'alpha1.jpg', '', '', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `catestrate`
+--
+
+CREATE TABLE `catestrate` (
+  `precop` text NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(200) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catestrate`
+--
+
+INSERT INTO `catestrate` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('100', 'qqq', 'qqq', 'god2.jpg', '', '', 1),
+('100', 'qqq', 'ca', 'ACblack.jpg', '', '', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `catgratis`
+--
+
+CREATE TABLE `catgratis` (
+  `precop` text NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(200) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catgratis`
+--
+
+INSERT INTO `catgratis` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('GrÃ¡tis', 'qqq', 'ca', 'god2.jpg', '', '', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `catindie`
+--
+
+CREATE TABLE `catindie` (
+  `precop` text NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(200) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catindie`
+--
+
+INSERT INTO `catindie` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('100', 'effwrgehrthjur8-grw78uguyrg8fefgd9evfuwhdghjfev eufiwbfebrfhifevf8whrfghwyhf0wevwufhwerbfw', 'fgfgw', 'god1.jpg', '', '', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `catrpg`
+--
+
+CREATE TABLE `catrpg` (
+  `precop` text NOT NULL,
+  `descricaop` text NOT NULL,
+  `nomep` varchar(150) NOT NULL,
+  `caminho_img` varchar(100) NOT NULL,
+  `caminho_img1` varchar(200) NOT NULL,
+  `caminho_img2` varchar(200) NOT NULL,
+  `id` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `catrpg`
+--
+
+INSERT INTO `catrpg` (`precop`, `descricaop`, `nomep`, `caminho_img`, `caminho_img1`, `caminho_img2`, `id`) VALUES
+('300', 'qqq', 'qqq', 'god2.jpg', '', '', 1),
+('gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg', 'effwrgehrthjur8-grw78uguyrg8fefgd9evfuwhdghjfev eufiwbfebrfhifevf8whrfghwyhf0wevwufhwerbfw', 'Minha pica', 'alpha1.jpg', '', '', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `imgupload`
+--
+
+CREATE TABLE `imgupload` (
+  `id` int(11) NOT NULL,
+  `nome_imagem` varchar(220) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
   `nome` varchar(220) NOT NULL,
   `email` varchar(220) NOT NULL,
   `usuario` varchar(220) NOT NULL,
@@ -35,30 +212,129 @@ CREATE TABLE `usuarios` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Fazendo dump de dados para tabela `usuarios`
+-- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `usuario`, `senha`) VALUES
+(1, 'igor', 'igorluis0107@gmail.com', 'igor', '81dc9bdb52d04dc20036dbd8313ed055');
 
 --
--- Índices de tabelas apagadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `usuarios`
+-- Indexes for table `catacao`
+--
+ALTER TABLE `catacao`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catbatle`
+--
+ALTER TABLE `catbatle`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catesporte`
+--
+ALTER TABLE `catesporte`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catestrate`
+--
+ALTER TABLE `catestrate`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catgratis`
+--
+ALTER TABLE `catgratis`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catindie`
+--
+ALTER TABLE `catindie`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `catrpg`
+--
+ALTER TABLE `catrpg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `imgupload`
+--
+ALTER TABLE `imgupload`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `usuarios`
+-- AUTO_INCREMENT for table `catacao`
+--
+ALTER TABLE `catacao`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+
+--
+-- AUTO_INCREMENT for table `catbatle`
+--
+ALTER TABLE `catbatle`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `catesporte`
+--
+ALTER TABLE `catesporte`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `catestrate`
+--
+ALTER TABLE `catestrate`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `catgratis`
+--
+ALTER TABLE `catgratis`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `catindie`
+--
+ALTER TABLE `catindie`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `catrpg`
+--
+ALTER TABLE `catrpg`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `imgupload`
+--
+ALTER TABLE `imgupload`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
