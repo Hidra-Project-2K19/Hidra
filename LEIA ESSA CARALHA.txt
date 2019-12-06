@@ -1,0 +1,16 @@
+Salve meus manos.
+
+entao ta tudo ai, eu organizei os codigos e reciclei as coisas, tinha muita coisa repetida e desnecessaria, agora tem como cadastrar
+os jogos e tem a barra de pesquisa. O php ta suave nao precisa alterar nada, so voces ajeitarem as coisas no css e fica mec.
+tem dois usuarios de adm so vcs alterarem os dados dps.
+E usa o banco que esta na pasta!!
+
+adm1:
+ADM1@gmail.com
+senha = 123
+
+adm 2:
+igorluis0107@gmail.com
+senha = 123456789
+
+vlw meus manos, abraço! joao.php (: kjjj

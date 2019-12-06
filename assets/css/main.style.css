@@ -1,0 +1,1948 @@
+/* select */
+    ::selection{background:rgba(157, 255, 159, 0.84);}
+    ::-webkit-selection{background:rgba(157, 255, 159, 0.84);}
+    ::-moz-selection{background:rgba(157, 255, 159, 0.84);}
+
+    ins,del{text-decoration:none;}
+    .t-caret{font-size:inherit;color:rgba(20, 21, 20, 0);}
+    @media(max-width:800px){#t{width:400px;margin-left:-200px;}}
+  
+    
+    .card 
+    {
+      width: 300px;
+      height: auto;
+      margin: 0px;
+      margin-bottom: none;
+      text-align: center;
+      font-family: 'Titillium Web', sans-serif;
+      background: #111;
+      margin-top: 30px;
+      position: relative;
+      margin: 1% 5% 1% 4%;
+      justify-content: space-between;
+      float: left;
+    }
+  
+    #card1:hover , #card2:hover , #card3:hover , #card4:hover, #card5:hover, #card6:hover, #card7:hover, #card8:hover 
+    {
+      box-shadow: 0 5px 18px 15px #00ff5730;
+      transition: 0.3s;
+      border-radius:10px;
+    }
+  
+
+    html
+    {
+      background: center top no-repeat rgb(34, 34, 34);
+      background-image: linear-gradient(rgba(0, 255, 75, 0.16) 49%, rgba(72, 94, 42, 0) 88%);
+    }
+  
+    body 
+    {
+      font-family: 'Titillium Web', sans-serif;
+      margin: 0;
+    }
+  
+    h1, h2, h3, h4, h5, h6
+    {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 400;
+      margin: 10px 0;
+      color: #FFFFFF;
+      text-decoration: inherit;
+      text-decoration-color: #111;
+      text-align: center;
+    }
+
+    h2{
+      padding-top: 15px;
+    }
+
+    h6
+    {
+      font-size: 25px;
+    }
+
+    h1, b
+    {
+        color: #f1f1f1;
+        text-align: center; 
+        margin-top: 0px;
+    }
+  
+    h1:hover
+    {
+      color: #9df588;
+      transition: 0.8s;
+      cursor: pointer;
+    }
+  
+    p 
+    {
+      font-family: 'Titillium Web', sans-serif;
+      color: #888;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+  
+    .overlay 
+    {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+  
+    .overlay-content 
+    {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .overlay a 
+    {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .overlay a:hover, .overlay a:focus 
+    {
+      color: #f1f1f1;
+      transition: 0.4s;
+    }
+  
+    .overlay .closebtn 
+    {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    .containerrlog 
+  {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-image: rgb(161, 161, 161);
+    position: relative;
+    margin: 0% 42% 0% 41.3%;
+    padding-top: 40px;
+  }
+
+  
+  
+    /* @media screen and (max-height: 450px) 
+    {
+      .overlay {overflow-y: auto;
+      }
+      .overlay a {font-size: 20px
+      }
+      .overlay .closebtn 
+      {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    } */
+  
+    .openbtn 
+    {
+      font-size: 10px;
+      cursor: pointer;
+      background-color: #3333332e;
+      color: white;
+      border: none;
+      margin-top: -68px !important;
+      margin-bottom: 32px;
+      margin-right: 0%;
+      margin-left: -49%;
+      width: 35px;
+      position: fixed;
+      padding: 7px 0px;
+      z-index: 2;
+      top: 8%;
+      right: 97%;
+      left: 50%;
+    }
+  
+   
+    .openbtn:hover {
+      background-color: #44444487;
+      color: #99ffa9;
+      transition: 0.5s;
+    }
+  
+  /* Menu Rodrigo */
+    ul.topnav 
+    {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      height: 55px;
+      border-bottom: inset 1.5px;
+      border-bottom-color: #5efb60;
+    }
+  
+    ul.topnav li 
+    {
+      float: left;
+    }
+  
+    ul.topnav li a 
+    {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px 16px;
+      text-decoration: none;
+    }
+    /* hober button menu 
+    ul.topnav li a:hover:not(.active) 
+    {
+      background-color: #36515d;
+    }
+    */
+  
+    ul.topnav li a.active {
+      background-color: rgb(48, 86, 39);
+      padding: 14px 16px;
+  }
+  
+    ul.topnav li.right 
+    {
+      float: right;
+    }
+        
+    ul.topnav 
+    {
+      list-style-type: none;
+      padding-bottom: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      padding: 0.5% 50%;
+      top: 0%;
+      z-index: 1;
+    }
+  
+    ul.topnav li 
+    {
+      float: left;
+    }
+  
+    ul.topnav li a 
+    {
+      top: 0%;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      position: absolute;
+      padding: 16px 14px 15px;
+      left: 94%;
+    }
+  
+    /* hover button menu 
+    ul.topnav li a:hover:not(.active) 
+    {
+      background-color: #36515d;
+    }
+    */
+  
+    ul.topnav li a:hover
+    {
+      color: #31c43f;
+      transition: 0.4s;
+    }
+  
+    ul.topnav li.right 
+    {
+      float: right;
+    }
+ 
+  
+    .logo 
+    {
+      
+      height: 52px;
+      width: 77px;
+      position: fixed;
+      margin: -0.5% 0% 0% -2.5%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .logov 
+    {
+      height: 52px;
+      width: 77px;
+      position: fixed;
+      margin: -0.5% 0% 0% -2.5%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .logocad
+    {
+      height: 52px;
+      width: 77px;
+      position: absolute;
+      margin: 0% 47% 0% 36.5%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .logocar 
+    {
+      height: 52px;
+      width: 77px;
+      position: absolute;
+      margin: 0% 47% 0% 42.5%;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+
+
+    .fieldsetcad
+    {
+      margin: 0% 30% 0% 30%;
+      border-radius: 5px;
+      position: inherit;
+      justify-content: space-between;
+      display: flex;
+      text-align: -webkit-center;
+      padding-block-start: 0;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      padding-block-end: 0;
+      border-color: #1918183d !important;
+    }
+
+    .fieldsetcad:hover
+    {
+      box-shadow: 3px 4px 20px 1px rgba(0, 0, 0, 0.67);
+      transition: 0.8s;
+    }
+
+    .btnRent
+    {
+        background-color: #111;
+        color: white;
+        padding: 0.7rem 1.3rem;
+        border-radius: 5px;
+        opacity: 0.9;
+        cursor: pointer;
+        border-bottom-color: rgba(107, 255, 110, 0.9);
+        border-bottom-style: groove;
+        border-top: hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        display: block;
+        align-content: center;
+        justify-content: space-between;
+        position: absolute;
+        margin: 0% 36% 0% 36%;
+    }
+
+    .btnEent
+    {
+        background-color: #111;
+        color: white;
+        padding: 0.7rem 1.3rem;
+        border-radius: 5px;
+        opacity: 0.9;
+        cursor: pointer;
+        border-bottom-color: rgba(107, 255, 110, 0.9);
+        border-bottom-style: groove;
+        border-top: hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        display: block;
+        align-content: center;
+        justify-content: space-between;
+        position: absolute;
+        margin: 0% 57% 0% 57%;
+    }
+
+    .btnS p:hover .btnRent
+    {
+        background-color: rgba(87, 152, 88, 0.9);
+        transition: 0.8s;
+    }
+
+    .btnS p:hover .btnEent
+    {
+        background-color: rgba(87, 152, 88, 0.9);
+        transition: 0.8s;
+    }
+
+
+    .btnRcad
+    {
+        background-color: #111;
+        color: white;
+        padding: 0.7rem 1.3rem;
+        border-radius: 5px;
+        opacity: 0.9;
+        cursor: pointer;
+        border-bottom-color: rgba(107, 255, 110, 0.9);
+        border-bottom-style: groove;
+        border-top: hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        display: block;
+        align-content: center;
+        justify-content: space-between;
+        position: absolute;
+        margin: 0% 36% 0% 36%;
+    }
+
+    .btnEcad
+    {
+        background-color: #111;
+        color: white;
+        padding: 0.7rem 1.3rem;
+        border-radius: 5px;
+        opacity: 0.9;
+        cursor: pointer;
+        border-bottom-color: rgba(107, 255, 110, 0.9);
+        border-bottom-style: groove;
+        border-top: hidden;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        display: block;
+        align-content: center;
+        justify-content: space-between;
+        position: absolute;
+        margin: 0% 57% 0% 57%;
+    }
+
+    .btnS p:hover .btnRcad
+    {
+        background-color: rgba(87, 152, 88, 0.9);
+        transition: 0.8s;
+    }
+
+    .btnS p:hover .btnEcad
+    {
+        background-color: rgba(87, 152, 88, 0.9);
+        transition: 0.8s;
+    }
+
+
+    img
+    {
+      vertical-align: middle;
+      border-style: none;
+      width: 100%;
+    }
+  
+  /* Fim Menu Rodrigo*/
+
+  /* caracteristicas paralax images */
+
+    /* ACBF */
+    .parallaxACBF
+    {
+      
+      background-image: url("../img/assassins1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2ACBF
+    {
+      background-image: url("../img/assassins2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* CITIES */
+    .parallaxCITIES
+    {
+      
+      background-image: url("../img/citiessky.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2CITIES
+    {
+      background-image: url("../img/citiessky2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* CSGO */
+    .parallaxCSGO
+    {
+      
+      background-image: url("../img/csgo.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2CSGO
+    {
+      background-image: url("../img/csgo2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* EURO */
+    .parallaxEURO
+    {
+      
+      background-image: url("../img/euroimg.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2EURO
+    {
+      background-image: url("../img/euroimg2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* FALL  */
+    .parallaxFALL 
+    {
+      
+      background-image: url("../img/fall1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2FALL 
+    {
+      background-image: url("../img/fall2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* FTN */
+    .parallax 
+    {
+      
+      background-image: url("../img/fortnite.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2 
+    {
+      background-image: url("../img/fortnite2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* GOD */
+    .parallaxGOD 
+    {  
+      background-image: url("../img/god1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2GOD
+    {
+      background-image: url("../img/god2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* GTA */
+    .parallaxGTA 
+    {
+      background-image: url("../img/gta1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2GTA 
+    {
+      background-image: url("../img/gta2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* H */
+    .parallaxH 
+    {
+      background-image: url("../img/halo1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2H 
+    {
+      background-image: url("../img/halo2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* JUST */
+    .parallaxJUST 
+    {
+      
+      background-image: url("../img/just1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2JUST 
+    {
+      background-image: url("../img/just2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* MORTAL */
+    .parallaxMORTAL 
+    {
+      
+      background-image: url("../img/mortalkombat1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2MORTAL 
+    {
+      background-image: url("../img/mortalkombat2.png");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* NEED */
+    .parallaxNEED
+    {
+      
+      background-image: url("../img/need1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2NEED 
+    {
+      background-image: url("../img/need2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* OUT */
+    .parallaxOUT 
+    {
+      
+      background-image: url("../img/outlast1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2OUT 
+    {
+      background-image: url("../img/outlast2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* RAINBOW */
+    .parallaxRAINBOW 
+    {
+      
+      background-image: url("../img/rainbow1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2RAINBOW 
+    {
+      background-image: url("../img/rainbow2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* RL */
+    .parallaxRL 
+    {
+      
+      background-image: url("../img/rocketleague.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2RL 
+    {
+      background-image: url("../img/rocektleague2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* RUST */
+    .parallaxRUST 
+    {
+      
+      background-image: url("../img/rust1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2RUST 
+    {
+      background-image: url("../img/rust2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* SKY */
+    .parallaxSKY
+    {
+      
+      background-image: url("../img/skyrim1.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2SKY
+    {
+      background-image: url("../img/skyrim2.jpg");
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+  /* FIM paralax images caracteristicas */
+  
+  /* .fieldset-compres 
+  {
+      margin: 0% 30% 0% 30%;
+      border-radius: 5px;
+      position: inherit;
+      justify-content: space-between;
+      display: flex;
+      text-align: -webkit-center;
+      padding-block-start: 0;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      padding-block-end: 0;
+      border-color: #1918183d !important;
+  }
+
+  .fieldset-compres :hover
+  {
+      box-shadow: 3px 4px 20px 1px rgba(0, 0, 0, 0.67);
+      transition: 0.8s;
+  } */
+
+  .imgcompres{
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .imgcompres:hover{
+    cursor: pointer;
+    background-color: red 0.8s;
+  }
+
+  .tablecom, .tdcom, .thcom {    
+    border: 1px solid #94949452;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #00000036;
+    color: #f1f1f1;
+    box-shadow: 5px;
+    }
+
+    .tablecom {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .thcom, .tdcom {
+        padding: 15px;
+    }
+
+
+  /* Slides */
+    .slide
+    {
+      display: block;
+      position: relative;
+    }
+
+    .caixa1, .caixa2, .caixa3 {
+      position: relative;
+      display: block;
+      align-content: center;
+      justify-content: space-between;
+      padding: .5rem 1rem;
+      padding-top: 0.5rem;
+      padding-right: 1rem;
+      padding-bottom: 4.5rem;
+      padding-left: 1rem;
+  }
+  
+  
+    .mySlides 
+    {
+      display:none;
+      }
+  
+    .w3-badge
+    {
+      height:13px;width:13px;
+      padding:0px;
+      color: #31c43f;
+    }
+  
+   
+    .w3-right, .w3-left, .w3-hover-text-khaki 
+    {
+      color: #FFF;
+      cursor: pointer;
+    }
+  
+    .w3-text-khaki, .w3-hover-text-khaki:hover 
+    {
+      color: #31c43f!important;
+    }
+  
+    /* Float four columns side by side */
+    .column 
+    {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+  
+    /* Remove extra left and right margins, due to padding */
+    .row 
+    {
+      margin: 0 -5px;
+    }
+  
+    /* Clear floats after the columns */
+    .row:after 
+    {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    /* Responsive columns */
+  
+  /* Fim Slides */
+  
+  
+    .button 
+    {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: darkgreen;
+      background-color: black;
+      text-align: center;
+      cursor: pointer;
+      width: 80px;
+      height: 40px;
+      font-size: 18px;
+      transition: all 0.5s;
+      position: absolute;
+      left: 1150px;
+      border-radius: 10px;  
+    }
+  
+    .button span 
+    {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+  
+    .button span:after 
+    {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  
+    .button:hover span 
+    {
+      padding-right: 25px;
+      transition: 0.4s;
+    }
+  
+    .button:hover span:after 
+    {
+      opacity: 1;
+      right: 0;
+      transition: 0.4s;
+    }
+  
+    /* Fim Slide */
+    
+    /* Genero */
+    .contclas
+    {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #131313;
+      height: 150px;
+      border-bottom: inset 1.5px;
+      border-bottom-color: #5efb60;
+      
+    }
+    .contclascenter
+    {
+      text-align:center;
+      
+    }
+    .btcat
+    {
+      float:left;
+      margin-left:8%;
+      
+    }
+
+    fieldset  
+    {
+        margin: 0% 30% 0% 30%;
+        border-radius: 5px;
+        position: inherit;
+        justify-content: space-between;
+        display: flex;
+        text-align: -webkit-center;
+        padding-block-start: 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 0;
+        border-color: #1918183d !important;
+    }
+
+    fieldset :hover
+    {
+        box-shadow: 3px 4px 20px 1px rgba(0, 0, 0, 0.67);
+        transition: 0.8s;
+    }
+
+    .tc 
+    {
+        background: linear-gradient( to bottom, #365d3d 5%, rgba(72, 94, 42, 0) 70%);
+    }
+
+
+    .btn 
+  {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-bottom-color: rgba(0, 255, 11, 0.64);
+    border-bottom-style: groove;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    position: relative;
+    float: left;
+    left: 23%;
+    transition: 0.5s;
+  }
+  
+  .btn:hover 
+  {
+    opacity: 1;
+  }
+
+  .btnn:hover
+  {
+    box-shadow: 3px 4px 20px 1px rgba(0, 0, 0, 0.67);
+    transition: 0.8s;
+  }
+
+  .btnn
+  {
+    background-color: #111;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 16%;
+    opacity: 0.9;
+    cursor: pointer;
+    border-bottom-color: rgba(0, 255, 11, 0.64);
+    border-bottom-style: groove;
+    border-top: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    position: relative;
+    margin: 1% 41.3% 1% 41.3%;
+  }
+    /* @media screen and (max-width: 1450px) 
+    {
+      .contclas
+      {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #131313;
+        height: 200px;
+        border-bottom: inset 1.5px;
+        border-bottom-color: #5efb60;
+        
+      }
+    } */
+  
+    .contclas h2:hover
+    {
+      color: #31c43f;
+    }
+  
+    /* Fim Genero */
+  
+  /* Card */
+    .AWP
+    {
+      vertical-align: middle;
+      z-index: 1;
+      height: 1210px;
+      background: center top no-repeat rgb(34, 34, 34);
+      background-image: linear-gradient(rgba(0, 255, 75, 0.16) 5%, rgba(72, 94, 42, 0) 80%);
+      margin: 0% 0% -1.5% 0%;
+    }
+  
+  
+    .card 
+    {
+      width: 300px;
+      height: auto;
+      margin: 0px;
+      margin-bottom: none;
+      text-align: center;
+      font-family: 'Titillium Web', sans-serif;
+      background: #111;
+      margin-top: 30px;
+      position: relative;
+      margin: 1% 5% 1% 4%;
+      justify-content: space-between;
+      float: left;
+    }
+  
+    #card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover, #card7:hover, #card8:hover, #card9:hover, #card10:hover, #card11:hover, #card12:hover, #card13:hover, #card14:hover, #card15:hover, #card16:hover         
+    {
+      box-shadow: 0 5px 18px 15px #00ff5730;
+      transition: 0.3s;
+      border-radius:10px;
+    }
+  
+    .price 
+    {
+      color: #2fb531;
+      font-size: 22px;
+    }
+  
+    .card button 
+    {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #3131315c;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: -6%;
+      border-bottom: 1px solid #2fb531;
+    }
+  
+    .card button:hover 
+    {
+      opacity: 0.7;
+      transition: 0.5s;
+      color: #8cff8d;
+    }
+  
+    
+    /* Fim card */
+  
+  
+  
+    .cont 
+    {
+      clear:both;
+      display: block;
+      position: relative;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: center;
+      background-color: #42424252;
+      border-bottom: inset 1px;
+      border-bottom-color: #5efb60;
+      margin-top: -80px;
+  }
+  
+    .categorias
+    {
+      border:2px green;
+      border-radius:5px;
+      box-shadow: 0 4px 4px 0 white;
+      position:absolute;
+  
+    }
+  
+    footer
+    {
+      background-color: #1b1b1b;
+      height: 100px;
+      border-bottom: inset 1px;
+      border-bottom-color: #5efb60;
+      clear:both;
+    }
+  
+    footer p
+    {
+      text-align: center;
+    }
+  
+    .logoF
+    {
+      display: block;
+      height: 52px;
+      width: 77px;
+      position: absolute;
+      margin: 2% 47% 0% 47%;
+      border-radius: 10px;
+    }
+  
+    /* @media screen and (max-width: 1160px)
+    {
+      .logoF
+      {
+        display: block;
+        height: 52px;
+        width: 77px;
+        position: absolute;
+        margin: 4% 47% 0% 47%;
+        border-radius: 10px;
+      }
+    }
+  
+    @media screen and (max-width: 700px)
+    {
+      .logoF
+      {
+        display: block;
+        height: 52px;
+        width: 77px;
+        position: absolute;
+        margin: 10% 47% 0% 47%;
+        border-radius: 10px;
+      }
+    }
+  
+    @media screen and (max-width: 660px)
+    {
+      .logoF
+      {
+        display: none;
+      }
+    }
+  
+    @media screen and (max-width: 480px)
+    {
+      .logoF
+      {
+        display: none;
+      }
+    } */
+  
+    .oferta
+    {
+      color: #5efb60;
+      font-size:100px;
+      text-align:center;
+      background-color: #10101052;
+    }
+
+    input
+    {
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        border-radius: 5px;
+        background: #f1f1f1;
+        text-align: center;
+        border-bottom-style: groove !important;
+        border-top: hidden;
+        border-left: hidden;
+        border-right: hidden;
+        border-bottom-color: rgba(0, 255, 11, 0.64) !important;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus 
+    {
+        background-color: rgba(43, 43, 43, 0.84)!important;
+        transition: 0.5s;
+        outline: none;
+        border-bottom-style: groove !important;
+        border-top: hidden;
+        border-left: hidden;
+        border-right: hidden;
+        border-bottom-color: rgba(0, 255, 11, 0.64) !important;
+    }
+
+  
+  
+  .input-busca {
+    height: 45px;
+    border: none;
+    outline: none;
+    width: 22%;
+    position: absolute;
+    top: -1px;
+    left: 50px !important;
+    background:#6d6d6d;
+    z-index: 1;
+    transition: width 1s ease-out;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .input-busca:focus { 
+    border: 1px solid #3ffb60;
+    border-radius: 4px;
+    z-index: 1;
+    transition: width 1s ease-in;
+    background: #6d6d6d;
+  }
+  .buscars { 
+    height: 50px;
+    width: 50px;
+    background:  url('lupa.png')  center no-repeat;
+    border: none;
+    position: absolute;
+    top: 2px;
+    left: 470px;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .buscars:focus {
+    outline: none;
+  } 
+
+
+  .inputlog[type=text], .inputlog[type=password] 
+  {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border-radius: 5px;
+    background: #f1f1f1;
+    text-align: center;
+    border-bottom-style: groove;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom-color: rgba(0, 255, 11, 0.64);
+    
+  }
+  
+  .inputlog[type=text]:focus, .inputlog[type=password]:focus 
+  {
+    background-color: rgba(157, 255, 159, 0.84) !important;
+    outline: none;
+    border-bottom-style: groove;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom-color: rgba(0, 255, 11, 0.64);
+    transition: 0.8s;
+    margin: 48% 0% 0% -18%;
+  }
+
+  .contato{
+    text-align:center;
+    font-size:20px;
+    color:#f1f1f1;
+  }
+
+
+  .footerlog
+  {
+    background-color: #1b1b1b;
+    height: 100px;
+    border-bottom: inset 1px;
+    border-bottom-color: #5efb60;
+    margin: 2% 0% -1% 0%;
+  }
+
+
+  /* esconde o LABEL "Buscar" */
+   label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;	
+  } 
+  
+  
+  label {display: block;}
+    input, button {padding: 10px;}
+    input {width: 30%;}
+  
+  
+    li a, .dropbtn {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a.dropbtn{
+    top: 0%;
+    position: absolute;
+    padding: 16px 14px 15px;
+    /* right: 28%; */
+    /* position: relative; */
+    float: left;
+    left: 82.5%;
+}
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0% 5%;
+  }
+  
+  .dropdown-content a {
+    position: relative;
+    color: black;
+    padding: 12px 16px;
+    padding: 16px 14px 15px 85%;
+    text-decoration: none;
+    display: block;
+    background: #333;
+  }
+  
+  .dropdown-content a:hover {background-color: #171717;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    right: 7%;
+    top: 55px;
+  }
+
+
+  /* RESPONSIVIDADE */
+
+  @media screen and (max-width: 1891px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 8% 1% 8%;
+      }
+    }
+  
+    @media screen and (max-width: 1747px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 8% 1% 18.7%;
+      }
+    }
+  
+    @media screen and (max-width: 1680px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 1.5% 1% 4.7%;
+      }
+    }
+  
+    @media screen and (max-width: 1600px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 4.3% 1% 1.75%;
+      }
+    }
+  
+    @media screen and (max-width: 1450px) 
+    {
+      .contclas
+      {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #131313;
+        height: 200px;
+        border-bottom: inset 1.5px;
+        border-bottom-color: #5efb60;
+        
+      }
+    }
+
+    @media screen and (max-width: 1441px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 1% 1% 2.7%;
+      }
+    }
+    @media screen and (max-width: 1366px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 1% 1% 1.7%;
+      }
+
+
+      ul.topnav li a.dropbtn{
+        position: absolute;
+        padding: 16px 14px 15px;
+        /* right: 28%; */
+        /* position: relative; */
+        float: left;
+        left: 75%;
+    }
+    }
+  
+    @media screen and (max-width: 1304px) 
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 8% 1% 15.7% !important;
+      }
+
+      ul.topnav li a.dropbtn{
+        position: absolute;
+        padding: 16px 14px 15px;
+        /* right: 28%; */
+        /* position: relative; */
+        float: left;
+        left: 73%;
+    }
+
+    }
+  
+
+    @media screen and (max-width: 1157px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 8% 1% 10% !important;
+      }
+      .logoF
+      {
+        display: block;
+        height: 52px;
+        width: 77px;
+        position: absolute;
+        margin: 4% 47% 0% 47%;
+        border-radius: 10px;
+      }
+
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        right: 10%;
+        top: 55px;
+    }
+
+      ul.topnav li a.dropbtn{
+        position: absolute;
+        padding: 16px 14px 15px;
+        /* right: 28%; */
+        /* position: relative; */
+        float: left;
+        left: 70%;
+    }
+
+    }
+  
+    @media screen and (max-width: 954px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 10% 1% 35% !important;
+      }
+
+
+      ul.topnav li a.dropbtn{
+        position: absolute;
+        padding: 16px 14px 15px;
+        /* right: 28%; */
+        /* position: relative; */
+        float: left;
+        left: 61%;
+    }
+
+    }
+    
+    @media screen and (max-width: 700px)
+    {
+      .column 
+     {
+       width: 100%;
+       display: block;
+       margin-bottom: 20px;
+     }
+     .logo
+      {
+        display: none;
+      }
+      #busca
+      {
+        display: none;
+      }
+      ul.topnav li.right, ul.topnav li, .dropbtn
+      {
+        float: none;
+        display: none;
+      }
+      ul.topnav li.right, ul.topnav li a
+      {
+        position: relative;
+        float: left;
+        left: 48%;
+      }
+      .openbtn 
+      {
+        position: relative;
+        float: left;
+        left: 48%;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .overlay {overflow-y: auto;
+      }
+      .overlay a {font-size: 20px
+      }
+      .overlay .closebtn 
+      {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      
+  }
+
+    }
+  
+    @media screen and (max-width: 680px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 10% 1% 25% !important;
+      }
+    }
+
+    @media screen and (max-width: 660px)
+    {
+      .logoF
+      {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px)
+    {
+     
+   }
+  
+    @media screen and (max-width: 535px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 10% 1% 20% !important;
+      }
+    }
+  
+    @media screen and (max-width: 484px)
+    {
+      .card
+      {
+        float: left;
+        margin: 2% 10% 1% 17% !important;
+      }
+      .logoF
+      {
+        display: none;
+      }
+    }
+
+
+    /* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin: -5% 15% 8% -8%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contato{
+  text-align:center;
+  font-size:20px;
+  color:#f1f1f1;
+}
+
+
+.oferta{
+  color: #5efb60;
+  font-size:100px;
+  text-align:center;
+}
+.pessoa{
+    text-align:center;
+    background-color: #10101052;
+}
+
+.catjogo{
+  color: #5efb60;
+  font-size:100px;
+  text-align:center;
+  
+}
+.catconteiner{
+  background-color: #10101052;
+  border:none;
+  margin:none;
+  padding:none;
+}
+
+
+.parallax 
+{
+  
+  background-image: url("img/assassins1.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 
+{
+  background-image: url("img/assassins2.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containercomment 
+{
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-image: rgb(161, 161, 161);
+  position: relative;
+  margin: 0% 43% 0% 43%;
+  padding-top: 40px;
+}
+
+.boxtext
+{
+  padding: 50px 50px;
+  color:white;
+  background: center top no-repeat rgb(34, 34, 34);
+  background-image: linear-gradient(rgba(0, 255, 75, 0.16) 5%, rgba(72, 94, 42, 0) 30%);
+  text-align: center
+}
+.ti
+{
+  font-size:23px;
+  text-align:center;
+}
+
+.ti2 
+{
+  vertical-align: middle;
+  background-color: #191919;
+  border-bottom-style: groove;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-bottom-color: #60ff62;
+  padding: 1% 3%;
+  border-radius: 5px;
+  position: relative;
+  display: -webkit-inline-box;
+  cursor: pointer;
+  color: white;
+  margin-top: 40px;
+}
+
+.ti2:hover  
+{
+  background-color: rgba(87, 152, 88, 0.9);
+  transition: 0.8s;
+}
+
+
+.bg-imglog
+{
+  background-image: url("../img/LR-back.png");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-img-supp 
+  {
+    background-image: url("../img/LR-back.png");
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .containerV {
+    background-color: #1c1c1c;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 11% -10% 8.3% 12%;
+  }
+
+  .inputV[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .labelV {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .btnV {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btnV:hover {
+    background-color: #45a049;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    margin: 3% 44%;
+  }
+
+  .btnEvendas
+  {
+    background-color: #111;
+    color: white;
+    padding: 0.7rem 1.3rem;
+    border-radius: 5px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-bottom-color: rgba(107, 255, 110, 0.9);
+    border-bottom-style: groove;
+    border-top: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    display: block;
+    align-content: center;
+    justify-content: space-between;
+    position: absolute;
+    margin: -4% 57% 0% 47%;
+  }
+  
+    /* @media screen and (max-width: 280px)
+    {
+      .card
+      {
+        float: left;
+        margin: 1% 5% 1% 0% !important;
+      }
+    }
+   */
+
+   
+  
+    
+  
+    
+
+    
+  /* FIM RESPONSIVIDADE */

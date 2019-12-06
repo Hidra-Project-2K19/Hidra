@@ -4,7 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Sobre os Desenvolvedores </title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
+<<<<<<< Updated upstream
 <link rel="stylesheet" type="text/css" href="style.css">
+=======
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/main.style.css" type="text/css" />
+>>>>>>> Stashed changes
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
 <!-- Seleção -->
   <style type="text/css">

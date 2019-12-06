@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['logado'])) {
+    echo "<script> type='javascript'>alert('Acesso Negado!');";
+    echo "javascript:window.location='template.php';</script>";
+}
+
+?> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<<<<<<< Updated upstream
     <script src="js/cadastro.js"></script>
+=======
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.style.css">
+    <script src="assets/js/cadastro.js"></script>
+>>>>>>> Stashed changes
     <!-- Seleção -->
   <style type="text/css">
     ::selection{background:rgba(157, 255, 159, 0.84);}
@@ -21,6 +37,7 @@
 <!-- Fim Seleção -->
 
 <style type="text/css">
+<<<<<<< Updated upstream
     html
     {
         background: url(/public/images/v6/colored_body_top2.png?v=2) center top no-repeat #222222;
@@ -250,6 +267,9 @@
         border: none;
         box-shadow: none;
     }
+=======
+   
+>>>>>>> Stashed changes
 
     .btnS
     {
@@ -307,6 +327,7 @@
         background-color: rgba(87, 152, 88, 0.9);
         transition: 0.8s;
     }
+<<<<<<< Updated upstream
 
     footer
   {
@@ -374,6 +395,8 @@
       display: none;
     }
   }
+=======
+>>>>>>> Stashed changes
 </style>
     
 </head>
@@ -381,7 +404,7 @@
 
     <!-- Menu -->
         <ul class="topnav">
-        <a href="home.php"><img style="vertical-align: middle;" class="logo" src="img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
+        <a href="home.php"><img style="vertical-align: middle;" class="logo" src="assets/img/HYDRA-WHITEE.png" alt="Hydra Games"></a>
             <li><a class="active" href="home.php">Home</a></li>
             <li><a href="suport.php">Suporte</a></li>
             <li class="right"><a href="login.php">Login</a></li>
@@ -393,28 +416,22 @@
             <h2>Insira Seus Dados</h2>
 
         <!-- Formulário -->
-        <?php
-			if(isset($_SESSION['msg'])){
-				echo $_SESSION['msg'];
-				unset($_SESSION['msg']);
-			}
-		?>
 
             <fieldset>
             <div class="caixa1">
-            <form  action="cad2.php" method="POST" style="border: none; box-shadow: none;">
+            <form  action="controller/controller_cadastro.php" method="POST" style="border: none; box-shadow: none;">
                 
             <h1 style="box-shadow: none;">Informações Principais</h1>
-            <label for="nome" style="box-shadow: none !important;"><b>ID</b></label><br>
-            <input type="text" name="nome" placeholder="Enter ID" id="nome" style=" box-shadow: none !important;">
+            <label for="nome" style="box-shadow: none !important;"><b>Nome</b></label><br>
+            <input type="text" name="nome" placeholder="Seu Nome:" id="nome" style=" box-shadow: none !important;" required="">
                 <br>
                 <br>
             <label for="email" style=" box-shadow: none !important;"><b>E-mail</b></label><br>
-            <input name="email" type="email" placeholder="Enter E-mail" id="email" style=" box-shadow: none !important;" >
+            <input name="email" type="email" placeholder="Enter E-mail" id="email" style=" box-shadow: none !important;" required="">
                 <br>
                 <br>
             <label for="usuario" style=" box-shadow: none !important;"><b>Nick-Name</b></label><br>
-            <input name="usuario" type="text" placeholder="Enter Nick-Name" id="usuario" style=" box-shadow: none !important;" >
+            <input name="usuario" type="text" placeholder="Enter Nick-Name" id="usuario" style=" box-shadow: none !important;" required="">
                 <br>
                 <br>
             <label for="senha" style=" box-shadow: none !important;"><b>Senha</b></label><br>
@@ -446,7 +463,7 @@
 
     <!-- Footer -->
     <footer>
-    <img src="img/HYDRA-WHITEE.png" class="logoF">
+    <img src="assets/img/HYDRA-WHITEE.png" class="logoF">
         <p>© 2019 Hydra Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos deus respectivos donos nos EUA e em outros países.
         IVA incluso em todos os preços onde aplicável.</p>
     </footer>

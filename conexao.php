@@ -1,8 +1,15 @@
 <?php
-	$servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
-	$dbname = "celke";
-	
-	//Criar a conexao
-	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+//Conexão com banco de dados
+
+$severname = "localhost";
+$username = "root";
+$password = "";
+$db_name = "celke";
+
+$connect = mysqli_connect($severname, $username, $password, $db_name);
+mysqli_set_charset($connect, "utf8");
+if(mysqli_connect_error()):
+	echo "Erro na Conexão:".mysqli_connect_error();
+endif;
+
+?>
