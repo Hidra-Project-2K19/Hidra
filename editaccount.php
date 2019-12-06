@@ -26,7 +26,9 @@ mysqli_close($connect);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/cadastro.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.style.css">
+    <script src="assets/js/cadastro.js"></script>
     <!-- Seleção -->
   <style type="text/css">
     ::selection{background:rgba(157, 255, 159, 0.84);}

@@ -5,10 +5,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Efetuando Compra</title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400&display=swap" rel="stylesheet"> 
-<<<<<<< Updated upstream
-<link rel="stylesheet" type="text/css" href="style.css">
-=======
->>>>>>> Stashed changes
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.style.css">
 <link rel="stylesheet" href="print.css" type="text/css" media="print">
 <style>
 
